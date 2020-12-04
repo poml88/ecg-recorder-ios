@@ -1,1 +1,1 @@
-# ecg-recorder-ios
+# ECG Recorder for Polar H10 on iOS
