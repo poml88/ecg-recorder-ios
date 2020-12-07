@@ -25,3 +25,8 @@ I am a passionate runner and was looking for a heart rate monitor for sports app
 It turned out very soon that development of this app will consume a significant amount of time and in the end also costed money. I hope that the small fee asked will compensate a little bit for the invested time and money. I found that a model of several lengths subscriptions with a one week free trial will be the most fair, rather than having a one time payment where you don’t know what you will get.
 
 This App uses the excellent Purchase and PolarBle SDKs.
+
+## Ideas for future versions
+
+* Realize a button that sets a marker in the ECG data, to find a particular point in the recording. could be done by adding a value of 9999 or 0 or similar, since the data array is Int32 iirc.
+* Realize a running window. Fill the array with e.g. 30 minutes of data, then, when adding the latest data to the end, strip the oldest data from the beginning. Like this, there will be always X minutes of data in the array. Limits data size
