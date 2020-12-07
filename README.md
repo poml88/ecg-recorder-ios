@@ -28,5 +28,9 @@ This App uses the excellent Purchase and PolarBle SDKs.
 
 ## Ideas for future versions
 
-* Realize a button that sets a marker in the ECG data, to find a particular point in the recording. could be done by adding a value of 9999 or 0 or similar, since the data array is Int32 iirc.
-* Realize a running window. Fill the array with e.g. 30 minutes of data, then, when adding the latest data to the end, strip the oldest data from the beginning. Like this, there will be always X minutes of data in the array. Limits data size
+* Realize a button that sets a marker in the ECG data, to find a particular point in the recording. could be done by adding a value of 9999 or 0 or similar, since the data array is Int32 iirc. Maybe realize this marker button as a widget, so the phone does not need to be unlocked.
+* Realize a running window. Fill the array with e.g. 30 minutes of data, then, when adding the latest data to the end, strip the oldest data from the beginning. Like this, there will be always X minutes of data in the array. Limits data size.
+* Or: When pressing a button save the last minute of data and the coming minute of data or so... Need to think about that.
+* Add something as a live graph, but how?
+* Save data as CSV, having a time stamp for X and the collected data for Y.
+* Maybe some sort of long-time mode would be useful. Reducing resolution and reducing the amount of data.
