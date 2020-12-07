@@ -34,3 +34,4 @@ This App uses the excellent Purchase and PolarBle SDKs.
 * Add something as a live graph, but how?
 * Save data as CSV, having a time stamp for X and the collected data for Y.
 * Maybe some sort of long-time mode would be useful. Reducing resolution and reducing the amount of data.
+* Search for devices, display a list and let the user select one.
