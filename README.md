@@ -14,8 +14,6 @@ HR data: There is about one value for HR (average beats per minute, bpm) recorde
 
 RR data: The RR interval is the time elapsed between two successive R-waves of the QRS signal on the electrocardiogram (the reciprocal is the HR). The RR intervals are recorded in ms.
 
-If useful and requested by users I might be able to write timestamps to the text files in a future version of the app. Possibly then as comma separated values (csv).
-
 ## Why did I make this app?
 
 I am a passionate runner and was looking for a heart rate monitor for sports application. I came across the Polar H10 and was intrigued by the possibility to obtain real ECG data from this device. To my surprise in late 2019 there was no iOS app on the App Store which offered recording or displaying of the data. There was one exception, but it was quite costly and not clear what was offered. Since I saw no other options and Polar provides a very good SDK vor the H10, I decided to develop my own app.
