@@ -33,3 +33,4 @@ This App uses the excellent Purchase and PolarBle SDKs.
 * Save data as CSV, having a time stamp for X and the collected data for Y.
 * Maybe some sort of long-time mode would be useful. Reducing resolution and reducing the amount of data.
 * Search for devices, display a list and let the user select one.
+* A small stop watch next to record button that shows the time a recording is running.
