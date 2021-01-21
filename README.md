@@ -1,6 +1,8 @@
 # ECG Recorder for Polar H10 on iOS
 
 This is a general overview over the app.
+It can be found at
+https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051
 
 ## How does this app work?
 
