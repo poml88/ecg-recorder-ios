@@ -4,6 +4,10 @@ This is a general overview over the app.
 It can be found at
 https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051
 
+## Note on minimum Firmware version
+
+For ECG streaming to work you need a *minimum firmware version of 3.0.56* on your H10. You can update your H10 using the Polar Beat and Polar Flow apps.
+
 ## How does this app work?
 
 This App records three types of data from a Polar H10 hear rate sensor: electrocardiogram (ECG), heart rate (HR) and the R-R interval (RR).
