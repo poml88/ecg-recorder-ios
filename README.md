@@ -10,7 +10,12 @@ Please email ecg-recorder@poeml.de with all questions and comments.
 
 ## Note on minimum H10 firmware version required
 
-For ECG streaming to work you need a *minimum firmware version of 3.0.56* on your H10. You can update your H10 using the Polar Beat and Polar Flow apps.
+For ECG streaming to work you need a *minimum firmware version of 3.0.35* on your H10. You can update your H10 using the Polar Beat and Polar Flow apps.
+
+## Demo videos ##
+
+Have a look at the demo videos on how to convert the data into Numbers or EDFbrowser.
+https://github.com/poml88/ecg-recorder-ios/tree/main/demo-video
 
 ## How does this app work?
 
@@ -34,13 +39,3 @@ It turned out very soon that development of this app will consume a significant 
 
 This App uses the excellent Purchase and PolarBle SDKs.
 
-## Ideas for future versions
-
-* Realize a button that sets a marker in the ECG data, to find a particular point in the recording. could be done by adding a value of 9999 or 0 or similar, since the data array is Int32 iirc. Maybe realize this marker button as a widget, so the phone does not need to be unlocked.
-* Realize a running window. Fill the array with e.g. 30 minutes of data, then, when adding the latest data to the end, strip the oldest data from the beginning. Like this, there will be always X minutes of data in the array. Limits data size.
-* Or: When pressing a button save the last minute of data and the coming minute of data or so... Need to think about that.
-* Add something as a live graph, but how?
-* Save data as CSV, having a time stamp for X and the collected data for Y.
-* Maybe some sort of long-time mode would be useful. Reducing resolution and reducing the amount of data.
-* Search for devices, display a list and let the user select one.
-* A small stop watch next to record button that shows the time a recording is running.
