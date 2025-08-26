@@ -6,7 +6,7 @@ https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051
 
 ## App support and contact ##
 
-Please email ecg-recorder@poeml.de with all questions and comments.
+Please email "ecg-recorder at cmdline dot net" with all questions and comments.
 
 ## Note on minimum H10 firmware version required
 
