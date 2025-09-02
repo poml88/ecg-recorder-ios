@@ -2,7 +2,7 @@
 title: "Polar H10 心电图记录器"
 subtitle: "保存数据 — 显示实时图表。"
 description: "将 ECG、心率 (HR) 和 RR 数据导出为文本文件并显示实时图表。"
-screenshots_string: "Screenshots"
+screenshots_string: "屏幕截图"
 lang: zh-Hans
 permalink: /zh-Hans/
 ---
