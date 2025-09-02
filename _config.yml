@@ -5,6 +5,7 @@ subtitle: "Record, export, and analyze single-lead ECGs on iPhone and iPad."
 description: "ECG Recorder for iOS and iPadOS — capture single-lead ECGs, annotate events, and export data. Open-source landing page hosted on GitHub Pages."
 url: "https://poml88.github.io"
 baseurl: "/ecg-recorder-ios"
+image: "/assets/img/og-card.png"
 
 lang: "en"
 app_icon: "/assets/img/app-icon.png"
