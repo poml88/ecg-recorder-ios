@@ -49,6 +49,6 @@ The app is free to download to get a first impression and connect to a device. I
 
 This App uses the excellent Purchase and PolarBle SDKs.
 
-**Note:** The German versions of the [Impressum]({{ site.de_impressum_path | relative_url }}) and the [Privacy Policy]({{ site.de_privacy_path | relative_url }}) are the legally binding versions.
+> **Note:** The German versions of the [Impressum]({{ site.de_impressum_path | relative_url }}) and the [Privacy Policy]({{ site.de_privacy_path | relative_url }}) are the legally binding versions.
 
 
