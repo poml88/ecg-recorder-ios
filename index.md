@@ -29,17 +29,13 @@ If the user has an active subscription "Enable premium features" (IN-APP purchas
 According to specifications ECG data is collected at a rate of 130 Hz (my device works at 130.061 Hz) in microvolts (µV). That means that there is one value every 7.692 milliseconds (ms). For 10 minutes recording that is 78000 values. When importing the data into e.g. Microsoft Excel or Apple Numbers, you will receive one long column of µV values. You can divide all values by 1000 to receive millivolts (mV). You will need to create yourself a time column as well to be able to properly plot the data. If the time column shall be in seconds, it should have as values 0.007692, 0.015385, 0.023077, 0.030769, …. With that time column as X and the mV as Y you can plot a mV vs. seconds ECG.
 The "Set marker" button in the ECG live chart adds a value of 2000 µV to the data. This value can be easily seen in a graph or found by searching through the data.
 
-The open source software “EDFbrowser” can convert the ascii text files into .edf files which can be nicely browsed using the software. Some sample ECG data and demo videos for import into Apple Numbers and EDFBrowser are available at the Github site (https://github.com/poml88/ecg-recorder-ios).
+The open source software **EDFbrowser** can convert the ascii text files into .edf files which can be nicely browsed using the software. Some sample ECG data and demo videos for import into Apple Numbers and EDFBrowser are available at the Github site (https://github.com/poml88/ecg-recorder-ios).
 
 ### HR DATA
 There is about one value for HR (average beats per minute, bpm) recorded per second. In case you want to plot the data you will need to create a time column with 1, 2, 3, 4, … seconds and so forth.
 
 ### RR DATA
 The RR interval is the time elapsed between two successive R-waves of the QRS signal on the electrocardiogram (the reciprocal is the HR). The RR intervals are recorded in ms.
-
-The app is free to download to get a first impression and connect to a device. It is possible to see a few seconds of the live charts. To activate the premium features, please make one of the available IN-APP purchases. Each subscription has a one week free trial, so all features can be tried free of charge.
-
-Subscription will be charged to your iTunes account at confirmation of purchase and will automatically renew (at the duration selected) unless auto-renewal is turned off at least 24h prior to the end of the current period. Otherwise, your account will be charged for renewal at the original cost of your current subscription. Visit your iTunes Account Settings to manage subscriptions and/or turn off auto-renewal. Any unused portion of free trial period, if offered, will be forfeited when purchasing a subscription. For more information, see our Terms of Service and Privacy Policy.
 
 ## TERMS OF SERVICE
 Please note: This app is for informational purpose only. Use of the app and site is not intended to be a substitute for professional medical advice and you should promptly contact your own health care and/or provider regarding any medical conditions or medical questions that you have. THE APP AND WEB SITE DO NOT OFFER MEDICAL ADVICE, AND NOTHING CONTAINED IN THE CONTENT IS INTENDED TO CONSTITUTE PROFESSIONAL ADVICE FOR MEDICAL DIAGNOSIS OR TREATMENT.
