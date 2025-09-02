@@ -5,6 +5,8 @@ app_icon: "/assets/img/app-icon.png"
 permalink: /
 ---
 
+{% include screenshots.html %}
+
 This is a general overview over the app.
 It can be found at
 https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051
