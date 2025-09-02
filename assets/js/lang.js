@@ -1,3 +1,6 @@
+---
+---
+
 (function(){
   var baseurl = "{{ site.baseurl }}";
   var langs = ({{ site.data.languages | jsonify }});
