@@ -16,6 +16,21 @@ layout: nil
   <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
 
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"ECG Recorder for Polar H10",
+  "operatingSystem":"iOS, iPadOS",
+  "applicationCategory":"MedicalApplication",
+  "offers": { "@type":"Offer", "price":"0", "priceCurrency":"USD" },
+  "url":"https://poml88.github.io/ecg-recorder-ios/",
+  "downloadUrl":"https://apps.apple.com/app/id1541497051",
+  "image":"{{ '/assets/img/og-card.png' | relative_url | absolute_url }}" }
+}
+</script>
+
   
   <!-- hreflang alternates -->
   {%- assign baseurl = site.baseurl | default: '' -%}
