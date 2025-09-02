@@ -2,7 +2,7 @@
 (function(){
   const supported = ['en','de','fr','zh-Hans'];
   const path = window.location.pathname.replace(/\/+$/,''); // trim trailing slash
-  const siteBase = norm(window.__BASEURL__ || '');
+  const siteBase = '{{ site.baseurl }}' || '';
   const currentLang = document.documentElement.getAttribute('lang') || 'en';
 
   // Persisted language
