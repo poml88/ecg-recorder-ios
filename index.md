@@ -1,5 +1,5 @@
 ---
-title: "ECG Recorder iOS"
+title: "ECG Recorder for Polar H10"
 lang: en
 app_icon: "/assets/img/app-icon.png"
 permalink: /
@@ -7,13 +7,9 @@ permalink: /
 
 {% include screenshots.html %}
 
-This is a general overview over the app.
-It can be found at
-https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051
-
 ## App support and contact
 
-Please email **ecg-recorder [ a t ] cmdline [ d o t ] net** with all questions and comments.
+Please email **ecg-recorder [ a t ] cmdline [ d o t ] net** with all questions and comments. Or open an issue on [GitHub](https://github.com/poml88/ecg-recorder-ios).
 
 ## Note on minimum H10 firmware version required
 
@@ -22,19 +18,36 @@ For ECG streaming to work you need a *minimum firmware version of 3.0.35* on you
 ## Demo videos
 
 Have a look at the demo videos on how to convert the data into Numbers or EDFbrowser.
-https://github.com/poml88/ecg-recorder-ios/tree/main/demo-video
+
+- [Demo how to open txt ascii ECG data file in numbers on iphone](https://youtu.be/N58LFXaAeIQ)
+- [Demo convert txt file with EDFbrowser](https://youtu.be/dLscFwdWxSE)
 
 ## How does this app work?
 
-This App records three types of data from a Polar H10 hear rate sensor: electrocardiogram (ECG), heart rate (HR) and the R-R interval (RR).
+This App records three types of data from a Polar H10 heart rate sensor: electrocardiogram (ECG), heart rate (HR) and the R-R interval (RR). Minimum firmware of the H10 for ECG to work is 3.0.35. Each type of data can also be displayed in a real time chart. Screenshots of the real time chart can be taken via the “save to photos” button. A video of the live chart can be recorded using the iOS screen recorder button from the iOS Control Center (maybe needs to be enabled via Settings —> Control Center).
 
-All data is saved to the ECG Recorder App's directory in the Files app, the file name being the timestamp when the recording started. All data is saved as an ascii text file, which seems to be the most versatile format to use. The text files contain one value per line and should be easily imported into other software for data processing.
+If the user has an active subscription "Enable premium features" (IN-APP purchase), all data is saved to the ECG Recorder App's directory in the "Files" app, the file name being the timestamp when the recording started. All data is saved as an ascii text file. The text files contain one value per line and should be easily imported into other software for data processing. In addition, the premium features include live / real-time charts of ECG, HR, and RR.
 
-ECG data: According to specifications ECG data is collected at a rate of 130 Hz (my device works at 130.061 Hz) in microvolts (µV). That means that there is one value every 7.692 milliseconds (ms). For 10 minutes recording that is 78000 values. When importing the data into e.g. Microsoft Excel, you will receive one long column of µV values. You can divide all values by 1000 to receive millivolts (mV). You will need to create yourself a time column as well to be able to properly plot the data. If the time column shall be in seconds, it should have as values 0.007692, 0.015385, 0.023077, 0.030769, …. With that time column as X and the mV as Y you can plot a mV vs. seconds ECG.
+### ECG DATA
+According to specifications ECG data is collected at a rate of 130 Hz (my device works at 130.061 Hz) in microvolts (µV). That means that there is one value every 7.692 milliseconds (ms). For 10 minutes recording that is 78000 values. When importing the data into e.g. Microsoft Excel or Apple Numbers, you will receive one long column of µV values. You can divide all values by 1000 to receive millivolts (mV). You will need to create yourself a time column as well to be able to properly plot the data. If the time column shall be in seconds, it should have as values 0.007692, 0.015385, 0.023077, 0.030769, …. With that time column as X and the mV as Y you can plot a mV vs. seconds ECG.
+The "Set marker" button in the ECG live chart adds a value of 2000 µV to the data. This value can be easily seen in a graph or found by searching through the data.
 
-HR data: There is about one value for HR (average beats per minute, bpm) recorded per second. In case you want to plot the data you will need to create a time column with 1, 2, 3, 4, … seconds and so forth.
+The open source software “EDFbrowser” can convert the ascii text files into .edf files which can be nicely browsed using the software. Some sample ECG data and demo videos for import into Apple Numbers and EDFBrowser are available at the Github site (https://github.com/poml88/ecg-recorder-ios).
 
-RR data: The RR interval is the time elapsed between two successive R-waves of the QRS signal on the electrocardiogram (the reciprocal is the HR). The RR intervals are recorded in ms.
+### HR DATA
+There is about one value for HR (average beats per minute, bpm) recorded per second. In case you want to plot the data you will need to create a time column with 1, 2, 3, 4, … seconds and so forth.
+
+### RR DATA
+The RR interval is the time elapsed between two successive R-waves of the QRS signal on the electrocardiogram (the reciprocal is the HR). The RR intervals are recorded in ms.
+
+The app is free to download to get a first impression and connect to a device. It is possible to see a few seconds of the live charts. To activate the premium features, please make one of the available IN-APP purchases. Each subscription has a one week free trial, so all features can be tried free of charge.
+
+Subscription will be charged to your iTunes account at confirmation of purchase and will automatically renew (at the duration selected) unless auto-renewal is turned off at least 24h prior to the end of the current period. Otherwise, your account will be charged for renewal at the original cost of your current subscription. Visit your iTunes Account Settings to manage subscriptions and/or turn off auto-renewal. Any unused portion of free trial period, if offered, will be forfeited when purchasing a subscription. For more information, see our Terms of Service and Privacy Policy.
+
+## TERMS OF SERVICE
+https://github.com/poml88/ecg-recorder-ios/blob/main/TERMS_of_SERVICE.md#terms-of-service
+
+Please note: This app is for informational purpose only. Use of the app and site is not intended to be a substitute for professional medical advice and you should promptly contact your own health care and/or provider regarding any medical conditions or medical questions that you have. THE APP AND WEB SITE DO NOT OFFER MEDICAL ADVICE, AND NOTHING CONTAINED IN THE CONTENT IS INTENDED TO CONSTITUTE PROFESSIONAL ADVICE FOR MEDICAL DIAGNOSIS OR TREATMENT.
 
 ## Why did I make this app?
 
