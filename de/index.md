@@ -1,10 +1,21 @@
 ---
-layout: default
-title: ECG Recorder
-lang: de
-description: Zeichnen Sie Ihr EKG auf dem iPhone und iPad auf.
+title: "ECG Recorder für iPhone und iPad"
+description: "Einfaches Aufzeichnen und Exportieren von Ein-Kanal-EKGs auf iPhone & iPad."
+permalink: /de/
 ---
 
-# ECG Recorder
+<section class="hero">
+  <img class="big-icon" src="{{ '/assets/img/app-icon.png' | relative_url }}" alt="App-Symbol">
+  <div>
+    <h1>{{ site.title }}</h1>
+    <p class="lead">Ein fokussiertes Werkzeug zum Erfassen und Exportieren von EKGs auf iPhone und iPad.</p>
+    <div class="cta">
+      <a class="app-store-btn" href="https://apps.apple.com/app/id1541497051" target="_blank" rel="noopener">
+        <span class="asb-top">Laden im</span>
+        <span class="asb-bottom">App&nbsp;Store</span>
+      </a>
+    </div>
+  </div>
+</section>
 
-*Hier kommt die deutsche Übersetzung des Inhalts hin.*
+> **Hinweis:** Diese Seite ist ein Platzhalter. Der deutsche Inhalt folgt.

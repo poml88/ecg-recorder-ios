@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="156" height="48" viewBox="0 0 156 48" role="img" aria-label="Download on the App Store">
+  <rect width="156" height="48" rx="12" fill="#000"/>
+  <g fill="#fff" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" text-anchor="start">
+    <text x="16" y="20" font-size="10" opacity=".9">Download on the</text>
+    <text x="16" y="36" font-size="18" font-weight="700">App Store</text>
+  </g>
+</svg>

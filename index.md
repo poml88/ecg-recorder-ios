@@ -1,9 +1,22 @@
 ---
-layout: default
-title: ECG Recorder
-lang: en
-description: Record and review your ECG on iPhone and iPad.
+title: "ECG Recorder for iPhone and iPad"
+description: "Record and export single-lead ECGs on iPhone & iPad. Simple, private, and designed for clarity."
+permalink: /
 ---
+
+<section class="hero">
+  <img class="big-icon" src="{{ '/assets/img/app-icon.png' | relative_url }}" alt="App icon">
+  <div>
+    <h1>{{ site.title }}</h1>
+    <p class="lead">A clean, focused tool to capture and export ECG traces on your iPhone and iPad.</p>
+    <div class="cta">
+      <a class="app-store-btn" href="https://apps.apple.com/app/id1541497051" target="_blank" rel="noopener">
+        <span class="asb-top">Download on the</span>
+        <span class="asb-bottom">App&nbsp;Store</span>
+      </a>
+    </div>
+  </div>
+</section>
 
 # ECG Recorder for Polar H10 on iOS
 
