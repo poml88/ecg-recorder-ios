@@ -170,3 +170,21 @@ footer a:hover{ color: var(--fg); }
   .app-store-badge{ height: 36px; } /* slightly smaller on phones */
   .lang-menu{ left: 50%; transform: translateX(-50%); } /* center dropdown under button */
 }
+
+.sshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  align-items: start;
+}
+.sshot {
+  background: transparent;
+  text-align: center;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+.sshot a { display: inline-block; border-radius: 20px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
+.sshot img { display: block; width: 100%; height: auto; max-width: 320px; }
+.sshot figcaption { margin-top: 6px; font-size: 0.9rem; color: #333; }
+@media (prefers-color-scheme: dark) {
+  .sshot figcaption { color: #ddd; }
+}
