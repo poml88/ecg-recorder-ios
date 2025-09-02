@@ -64,7 +64,7 @@ body{
 .lang-menu a:hover{ background: var(--card); }
 .lang-wrap{ position: relative; }
 
-main{display:grid; gap:24px; grid-template-columns: 1fr; }
+main{display:grid; gap:0px; grid-template-columns: 1fr; }
 .card{
   background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px;
 }
