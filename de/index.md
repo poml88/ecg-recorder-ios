@@ -10,7 +10,7 @@ permalink: /de/
 
 ## App-Support und Kontakt
 
-Bitte senden Sie alle Fragen und Kommentare per E-Mail an **ecg-recorder \[ a t ] cmdline \[ d o t ] net**. Alternativ können Sie ein Issue auf [GitHub](https://github.com/poml88/ecg-recorder-ios) eröffnen.
+Bitte senden Sie alle Fragen und Kommentare per E-Mail an **ecg-recorder [ a t ] cmdline [ d o t ] net**. Alternativ können Sie ein Issue auf [GitHub](https://github.com/poml88/ecg-recorder-ios) eröffnen.
 
 ## Hinweis zur minimalen H10-Firmwareversion
 
@@ -25,14 +25,14 @@ Sehen Sie sich die Demo-Videos an, die zeigen, wie die Daten in Numbers oder mit
 
 ## Wie funktioniert diese App?
 
-Diese App zeichnet drei Datentypen von einem Polar H10 Herzfrequenzsensor auf: Elektrokardiogramm (EKG), Herzfrequenz (HR) und das R-R-Intervall (RR). Für das EKG ist eine Mindest-Firmware des H10 von 3.0.35 erforderlich. Jeder Datentyp kann außerdem in einem Echtzeit-Diagramm angezeigt werden. Bildschirmfotos des Echtzeit-Diagramms können über die Schaltfläche „save to photos“ aufgenommen werden. Ein Video des Live-Diagramms kann mit der iOS-Bildschirmaufnahme-Schaltfläche aus dem iOS Kontrollzentrum aufgenommen werden (möglicherweise muss diese Funktion zunächst unter **Einstellungen → Kontrollzentrum** aktiviert werden).
+Diese App zeichnet drei Datentypen von einem Polar H10 Herzfrequenzsensor auf: Elektrokardiogramm (EKG), Herzfrequenz (HR) und das R-R-Intervall (RR). Für das EKG ist eine Mindest-Firmware des H10 von 3.0.35 erforderlich. Jeder Datentyp kann außerdem in einem Echtzeit-Diagramm angezeigt werden. Bildschirmfotos des Echtzeit-Diagramms können über die Schaltfläche „save to photos“ aufgenommen werden. Ein Video des Live-Diagramms kann mit der iOS-Bildschirmaufnahme-Schaltfläche aus dem iOS Kontrollzentrum aufgenommen werden (möglicherweise muss diese Funktion zunächst unter Einstellungen → Kontrollzentrum aktiviert werden).
 
-Wenn der Nutzer ein aktives Abonnement **„Enable premium features“** (In-App-Kauf) hat, werden alle Daten im Verzeichnis der ECG Recorder App in der **„Dateien“**-App gespeichert; der Dateiname ist der Zeitstempel, zu dem die Aufzeichnung begonnen hat. Alle Daten werden als ASCII-Textdatei gespeichert. Die Textdateien enthalten einen Wert pro Zeile und sollten sich leicht in andere Software zur Datenverarbeitung importieren lassen. Zusätzlich beinhalten die Premium-Funktionen Live-/Echtzeit-Diagramme für EKG, HR und RR.
+Wenn der Nutzer ein aktives Abonnement „Enable premium features“ (In-App-Kauf) hat, werden alle Daten im Verzeichnis der ECG Recorder App in der „Dateien“-App gespeichert; der Dateiname ist der Zeitstempel, zu dem die Aufzeichnung begonnen hat. Alle Daten werden als ASCII-Textdatei gespeichert. Die Textdateien enthalten einen Wert pro Zeile und sollten sich leicht in andere Software zur Datenverarbeitung importieren lassen. Zusätzlich beinhalten die Premium-Funktionen Live-/Echtzeit-Diagramme für EKG, HR und RR.
 
 ### EKG-DATEN
 
 Gemäß den Spezifikationen werden EKG-Daten mit einer Rate von 130 Hz gesammelt (mein Gerät arbeitet bei 130.061 Hz) in Mikrovolt (µV). Das bedeutet, dass alle 7,692 Millisekunden (ms) ein Wert vorliegt. Für eine 10-minütige Aufzeichnung sind das 78.000 Werte. Beim Import der Daten in z. B. Microsoft Excel oder Apple Numbers erhalten Sie eine lange Spalte mit µV-Werten. Sie können alle Werte durch 1000 teilen, um Millivolt (mV) zu erhalten. Sie müssen außerdem selbst eine Zeitspalte erstellen, um die Daten korrekt zu plotten. Soll die Zeitspalte in Sekunden sein, sollte sie die Werte 0.007692, 0.015385, 0.023077, 0.030769, … enthalten. Mit dieser Zeitspalte als X-Achse und den mV-Werten als Y-Achse können Sie ein mV vs. Sekunden-EKG plotten.
-Die Schaltfläche **„Set marker“** im EKG-Live-Diagramm fügt den Daten einen Wert von 2000 µV hinzu. Dieser Wert ist in einem Diagramm leicht zu erkennen oder durch Suchen in den Daten zu finden.
+Die Schaltfläche „Set marker“ im EKG-Live-Diagramm fügt den Daten einen Wert von 2000 µV hinzu. Dieser Wert ist in einem Diagramm leicht zu erkennen oder durch Suchen in den Daten zu finden.
 
 Die Open-Source-Software [EDFbrowser](https://www.teuniz.net/edfbrowser) kann die ASCII-Textdateien in .edf-Dateien konvertieren, die sich mit der Software bequem durchsuchen lassen. Einige [Beispiel-EKG-Daten](ecg-examples/examples.html) und [Demo-Videos](demo-video/videos.html) für den Import in Apple Numbers und EDFBrowser sind verfügbar.
 
