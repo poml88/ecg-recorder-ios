@@ -1,18 +1,18 @@
 
 languages:
   - code: en
-    name: English
+    name: 🇬🇧 English
     path: "/"
     hreflang: "en"
   - code: de
-    name: Deutsch
+    name: 🇩🇪 Deutsch
     path: "/de/"
     hreflang: "de"
   - code: fr
-    name: Français
+    name: 🇫🇷 Français
     path: "/fr/"
     hreflang: "fr"
   - code: zh-Hans
-    name: 简体中文
+    name: 🇨🇳 简体中文
     path: "/zh-Hans/"
     hreflang: "zh-Hans"
