@@ -2,7 +2,7 @@
 title: "EKG Recorder für Polar H10"
 subtitle: "Speichert Daten — zeigt Live-Diagramm an."
 description: "Exportiert EKG-, HR- und RR-Daten als Textdateien und zeigt ein Live-Diagramm an."
-screenshots_string: "Screenshots"
+screenshots_string: "Bildschirmfotos"
 lang: de
 permalink: /de/
 ---
