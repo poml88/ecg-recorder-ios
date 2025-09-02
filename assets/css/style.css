@@ -80,3 +80,38 @@ footer a{ color: var(--muted); }
 footer a:hover{ color: var(--fg); }
 .prose{max-width: 72ch;}
 .prose img{max-width:100%; border-radius: 12px;}
+
+/* App Store badge sizing (keeps Apple proportions, smaller by default) */
+.app-store-link { display: inline-block; line-height: 0; }
+.app-store-badge {
+  height: 44px;    /* desktop/tablet default */
+  width: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+@media (max-width: 640px) {
+  .app-store-badge { height: 40px; }
+}
+@media (max-width: 400px) {
+  .app-store-badge { height: 36px; }
+}
+
+/* Make the language button larger and more tappable */
+.lang-button{
+  padding: 10px 14px;           /* was 8px 12px */
+  gap: 10px;                    /* a bit more space between icon and text */
+  font-size: 15px;              /* larger label */
+  font-weight: 600;
+}
+.lang-button .globe{            /* make the globe bigger */
+  font-size: 18px;
+  line-height: 1;
+}
+.lang-button:hover{ transform: translateY(-1px); }
+.lang-button:focus-visible{
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Make the dropdown a touch friendlier */
+.lang-menu a{ padding: 12px 14px; font-size: 15px; }

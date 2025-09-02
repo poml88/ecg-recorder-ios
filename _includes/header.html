@@ -11,37 +11,29 @@
   {% assign _lang = page.lang | default: site.lang | default: 'en' %}
   {% case _lang %}
     {% when 'de' %}
-      <a href="https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051?itscg=30200&itsct=apps_box_badge&mttnsubad=1541497051" style="display: inline-block;">
-        <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/de-de?releaseDate=1607472000"
-             alt="Download on the App Store"
-             style="width: 246px; height: 82px; vertical-align: middle; object-fit: contain;" />
+      <a class="app-store-link" href="https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051?itscg=30200&itsct=apps_box_badge&mttnsubad=1541497051">
+        <img class="app-store-badge" src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/de-de?releaseDate=1607472000" alt="Download on the App Store" />
       </a>
     {% when 'fr' %}
-      <a href="https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051?itscg=30200&itsct=apps_box_badge&mttnsubad=1541497051" style="display: inline-block;">
-        <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/fr-fr?releaseDate=1607472000"
-             alt="Download on the App Store"
-             style="width: 261px; height: 82px; vertical-align: middle; object-fit: contain;" />
+      <a class="app-store-link" href="https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051?itscg=30200&itsct=apps_box_badge&mttnsubad=1541497051">
+        <img class="app-store-badge" src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/fr-fr?releaseDate=1607472000" alt="Download on the App Store" />
       </a>
     {% when 'zh-Hans' %}
-      <a href="https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051?itscg=30200&itsct=apps_box_badge&mttnsubad=1541497051" style="display: inline-block;">
-        <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/zh-cn?releaseDate=1607472000"
-             alt="Download on the App Store"
-             style="width: 224px; height: 82px; vertical-align: middle; object-fit: contain;" />
+      <a class="app-store-link" href="https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051?itscg=30200&itsct=apps_box_badge&mttnsubad=1541497051">
+        <img class="app-store-badge" src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/zh-cn?releaseDate=1607472000" alt="Download on the App Store" />
       </a>
     {% else %}
-      <!-- default: English -->
-      <a href="https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051?itscg=30200&itsct=apps_box_badge&mttnsubad=1541497051" style="display: inline-block;">
-        <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1607472000"
-             alt="Download on the App Store"
-             style="width: 246px; height: 82px; vertical-align: middle; object-fit: contain;" />
+      <a class="app-store-link" href="https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051?itscg=30200&itsct=apps_box_badge&mttnsubad=1541497051">
+        <img class="app-store-badge" src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1607472000" alt="Download on the App Store" />
       </a>
   {% endcase %}
 </div>
 
+
   </div>
   <div class="lang-wrap" style="margin-left:auto;">
     <button class="lang-button" data-lang-button>
-      <span aria-hidden="true">🌐</span>
+      <span class="globe" aria-hidden="true">🌐</span>
       <span>{{ page.lang | default: site.lang | upcase }}</span>
     </button>
     <div class="lang-menu" data-lang-menu>
