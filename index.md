@@ -9,7 +9,7 @@ This is a general overview over the app.
 It can be found at
 https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051
 
-## App support and contact ##
+## App support and contact
 
 Please email **ecg-recorder [ a t ] cmdline [ d o t ] net** with all questions and comments.
 
@@ -17,7 +17,7 @@ Please email **ecg-recorder [ a t ] cmdline [ d o t ] net** with all questions a
 
 For ECG streaming to work you need a *minimum firmware version of 3.0.35* on your H10. You can update your H10 using the Polar Beat and Polar Flow apps.
 
-## Demo videos ##
+## Demo videos
 
 Have a look at the demo videos on how to convert the data into Numbers or EDFbrowser.
 https://github.com/poml88/ecg-recorder-ios/tree/main/demo-video
