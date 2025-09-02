@@ -1,65 +1,52 @@
+
 (function(){
-  function baseurl(){ var m = document.querySelector('meta[name=baseurl]'); return m ? m.content : ''; }
-  function pathForLang(code){
-    switch(code){
-      case 'de': return baseurl() + '/de/';
-      case 'fr': return baseurl() + '/fr/';
-      case 'zh-Hans': return baseurl() + '/zh-Hans/';
-      default: return baseurl() + '/';
+  const supported = ['en','de','fr','zh-Hans'];
+  const path = window.location.pathname.replace(/\/+$/,''); // trim trailing slash
+  const siteBase = '{{ site.baseurl }}' || '';
+  const currentLang = document.documentElement.getAttribute('lang') || 'en';
+
+  // Persisted language
+  const saved = localStorage.getItem('site-lang');
+
+  function bestLang(){
+    const n = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || navigator.userLanguage || 'en'];
+    for(const l of n){
+      const ll = l.toLowerCase();
+      if(ll.startsWith('de')) return 'de';
+      if(ll.startsWith('fr')) return 'fr';
+      if(ll.startsWith('zh')) return 'zh-Hans';
+      if(ll.startsWith('en')) return 'en';
     }
-  }
-  function normalize(lang){
-    if(!lang) return 'en';
-    lang = lang.toLowerCase();
-    if(lang.startsWith('de')) return 'de';
-    if(lang.startsWith('fr')) return 'fr';
-    if(lang.startsWith('zh')) return 'zh-Hans';
     return 'en';
   }
-  function currentLang(){
-    return document.documentElement.getAttribute('lang') || 'en';
-  }
-  function onReady(fn){ if(document.readyState!=='loading') fn(); else document.addEventListener('DOMContentLoaded', fn); }
 
-  onReady(function(){
-    var btn = document.getElementById('langBtn');
-    var menu = document.getElementById('langMenu');
-    if(btn && menu){
-      btn.addEventListener('click', function(){
-        var open = menu.classList.toggle('open');
-        btn.setAttribute('aria-expanded', String(open));
-      });
-      menu.addEventListener('click', function(e){
-        var a = e.target.closest('a[data-lang]');
-        if(a){
-          var lang = a.getAttribute('data-lang');
-          try{ localStorage.setItem('lang', lang); }catch(e){}
-          window.location.href = pathForLang(lang);
-          e.preventDefault();
-        }
-      });
-      document.addEventListener('click', function(e){
-        if(!menu.contains(e.target) && !btn.contains(e.target)){ menu.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
-      });
-    }
-
-    // Autodetect: only when no choice stored and not already redirected in this tab
-    var stored = null;
-    try{ stored = localStorage.getItem('lang'); }catch(e){}
-    var redirected = sessionStorage.getItem('i18n-redirected') === '1';
-    var curr = currentLang();
-    if(stored && stored !== curr){
-      // Respect user's selection
-      window.location.replace(pathForLang(stored));
+  // Redirect on root (English is default at root). If user preferred different language and not on that page, go there.
+  if(!saved){
+    const b = bestLang();
+    if(b !== 'en' && (path === siteBase || path === siteBase + '')){
+      window.location.replace(siteBase + '/' + (b === 'zh-Hans' ? 'zh-Hans' : b) + '/');
       return;
     }
-    if(!stored && !redirected){
-      var navLangs = (navigator.languages && navigator.languages.length ? navigator.languages[0] : navigator.language) || 'en';
-      var pref = normalize(navLangs);
-      if(pref !== curr){
-        sessionStorage.setItem('i18n-redirected','1');
-        window.location.replace(pathForLang(pref));
-      }
-    }
+  }
+
+  // Lang menu toggle
+  const btn = document.querySelector('[data-lang-button]');
+  const menu = document.querySelector('[data-lang-menu]');
+  if(btn && menu){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    });
+    document.addEventListener('click', function(){
+      menu.style.display = 'none';
+    });
+  }
+
+  // Handle language change clicks
+  document.querySelectorAll('[data-lang-select]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      const lang = e.currentTarget.getAttribute('data-lang-select');
+      localStorage.setItem('site-lang', lang);
+    });
   });
 })();

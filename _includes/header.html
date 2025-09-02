@@ -1,0 +1,26 @@
+
+<div class="header">
+  {% if page.app_icon or site.app_icon %}
+    <img class="app-icon" src="{{ page.app_icon | default: site.app_icon | relative_url }}" alt="App icon">
+  {% endif %}
+  <div>
+    <h1 class="title">{{ page.title | default: site.title }}</h1>
+    {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
+    <div class="badges">
+      <a href="https://apps.apple.com/app/id1541497051" aria-label="Download on the App Store">
+        <img src="{{ '/assets/img/app-store-badge.svg' | relative_url }}" alt="Download on the App Store" width="180" height="60" style="height:40px; width:auto;">
+      </a>
+    </div>
+  </div>
+  <div class="lang-wrap" style="margin-left:auto;">
+    <button class="lang-button" data-lang-button>
+      <span aria-hidden="true">🌐</span>
+      <span>{{ page.lang | default: site.lang | upcase }}</span>
+    </button>
+    <div class="lang-menu" data-lang-menu>
+      {% for l in site.data.i18n.languages %}
+        <a href="{{ l.path | relative_url }}" data-lang-select="{{ l.code }}">{{ l.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

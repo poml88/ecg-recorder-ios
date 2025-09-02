@@ -1,24 +1,9 @@
 ---
-title: "ECG Recorder for iPhone and iPad"
-description: "Record and export single-lead ECGs on iPhone & iPad. Simple, private, and designed for clarity."
+title: "ECG Recorder iOS"
+lang: en
+app_icon: "/assets/img/app-icon.png"
 permalink: /
 ---
-
-<section class="hero">
-  <img class="big-icon" src="{{ '/assets/img/app-icon.png' | relative_url }}" alt="App icon">
-  <div>
-    <h1>{{ site.title }}</h1>
-    <p class="lead">A clean, focused tool to capture and export ECG traces on your iPhone and iPad.</p>
-    <div class="cta">
-      <a class="app-store-btn" href="https://apps.apple.com/app/id1541497051" target="_blank" rel="noopener">
-        <span class="asb-top">Download on the</span>
-        <span class="asb-bottom">App&nbsp;Store</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-# ECG Recorder for Polar H10 on iOS
 
 This is a general overview over the app.
 It can be found at
@@ -58,5 +43,4 @@ I am a passionate runner and was looking for a heart rate monitor for sports app
 It turned out very soon that development of this app will consume a significant amount of time and in the end also costed money. I hope that the small fee asked will compensate a little bit for the invested time and money. I found that a model of several lengths subscriptions with a one week free trial will be the most fair, rather than having a one time payment where you don’t know what you will get.
 
 This App uses the excellent Purchase and PolarBle SDKs.
-
 

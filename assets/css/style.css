@@ -1,0 +1,82 @@
+
+:root{
+  --bg: #ffffff;
+  --fg: #111827;
+  --muted: #6b7280;
+  --accent: #3b82f6; /* blue accent */
+  --card: #f9fafb;
+  --border: #e5e7eb;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+.container{max-width:1000px;margin:0 auto;padding:24px;}
+.header{
+  display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:center;padding-top:20px;
+}
+.app-icon{
+  width:96px;height:96px;border-radius:22%;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+.title{font-size: clamp(28px, 4vw, 40px); font-weight: 700; margin: 0;}
+.subtitle{margin: 0; color: var(--muted); font-size: 16px;}
+.badges{display:flex; gap:12px; align-items:center; flex-wrap:wrap;}
+
+.hero{
+  background: linear-gradient(180deg, rgba(59,130,246,.08), rgba(0,0,0,0));
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+.hero-inner{padding: 12px 0 24px;}
+
+.lang-switch{
+  margin-left:auto;
+}
+.lang-button{
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 999px;
+  padding: 8px 12px;
+  display:flex; align-items:center; gap:8px;
+  cursor:pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,.04);
+}
+.lang-menu{
+  position: absolute;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-top: 8px;
+  min-width: 180px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+  display:none;
+}
+.lang-menu a{
+  display:block; padding:10px 12px; text-decoration:none; color: var(--fg);
+}
+.lang-menu a:hover{ background: var(--card); }
+.lang-wrap{ position: relative; }
+
+main{display:grid; gap:24px; grid-template-columns: 1fr; }
+.card{
+  background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px;
+}
+
+footer{
+  border-top: 1px solid var(--border);
+  margin-top: 32px;
+  padding: 16px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+footer a{ color: var(--muted); }
+footer a:hover{ color: var(--fg); }
+.prose{max-width: 72ch;}
+.prose img{max-width:100%; border-radius: 12px;}

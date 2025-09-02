@@ -1,0 +1,14 @@
+
+<footer>
+  <div class="container" style="display:flex; gap:12px; flex-wrap:wrap; justify-content:space-between; align-items:center;">
+    <div>&copy; {{ site.time | date: "%Y" }} {{ site.title }}.</div>
+    <nav style="display:flex; gap:16px;">
+      {% if site.de_impressum_path %}
+      <a href="{{ site.de_impressum_path | relative_url }}">Impressum (DE)</a>
+      {% endif %}
+      {% if site.de_privacy_path %}
+      <a href="{{ site.de_privacy_path | relative_url }}">Datenschutzerklärung (DE)</a>
+      {% endif %}
+    </nav>
+  </div>
+</footer>

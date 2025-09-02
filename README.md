@@ -1,34 +1,24 @@
-# ECG Recorder Website
 
-Static, multilingual Jekyll site for the ECG Recorder iOS/iPadOS app.
+# ECG Recorder iOS – GitHub Pages Site
 
-## Quick start (GitHub Pages)
+This folder contains a minimal Jekyll site for the app’s landing page.
 
-1. Push these files to the `gh-pages` branch of the repository that is published at  
-   `https://poml88.github.io/ecg-recorder-ios/`.
-2. Ensure GitHub Pages is enabled for the repository and is building from `gh-pages`.
-3. That’s it — GitHub Pages comes with the whitelisted plugins used here (`jekyll-seo-tag`, `jekyll-sitemap`).
+**Live URL:** https://poml88.github.io/ecg-recorder-ios/
 
-## Multilingual
+## Notes
 
-- **English** is the default at `/`.
-- **German** at `/de/`, **French** at `/fr/`, **Simplified Chinese** at `/zh-Hans/`.
-- Auto-detection tries to redirect first-time visitors based on `navigator.language`.
-- The globe button toggles a menu to switch languages. Your choice is stored in `localStorage`.
+- English lives at the root (`/`). Other languages use subfolders: `/de/`, `/fr/`, `/zh-Hans/`.
+- Language is auto-detected on first visit and can be changed via the 🌐 button in the header.
+- SEO uses `jekyll-seo-tag`. Hreflang alternates and an Apple Smart App Banner (`app-id=1541497051`) are included.
+- German **Impressum** and **Datenschutzerklärung** are linked in the footer and are the legally binding versions.
+- Base URL is set to `/ecg-recorder-ios` in `_config.yml` to match the GitHub Pages project site path.
 
-## SEO
+## Local development
 
-- Uses `{% seo %}` from `jekyll-seo-tag` for titles, meta, Open Graph & Twitter tags.
-- `hreflang` alternates are added in the layout for all four languages.
-- `robots.txt` and `sitemap.xml` (via `jekyll-sitemap`) are included.
+```bash
+bundle install
+bundle exec jekyll serve
+```
 
-## Apple App tags
-
-- The smart banner meta is set: `<meta name="apple-itunes-app" content="app-id=1541497051">`.
-- Replace `assets/img/app-store-badge.svg` with Apple's official badge if you prefer.
-
-## Content
-
-- Update `index.md` files (one per language) to maintain content in Markdown.
-- Legal pages: the **German** versions are binding. Other languages link to `/de/` pages.
+> GitHub Pages builds with the `github-pages` gem. Only allowed plugins are used (`jekyll-seo-tag`, `jekyll-sitemap`).
 

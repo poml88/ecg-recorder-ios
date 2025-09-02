@@ -1,32 +1,32 @@
-title: ECG Recorder
-description: Record and export single-lead ECGs on iPhone & iPad. Simple, private, and designed for clarity.
+
+# Site settings
+title: "ECG Recorder iOS"
+subtitle: "Record, export, and analyze single-lead ECGs on iPhone and iPad."
+description: "ECG Recorder for iOS and iPadOS — capture single-lead ECGs, annotate events, and export data. Open-source landing page hosted on GitHub Pages."
 url: "https://poml88.github.io"
 baseurl: "/ecg-recorder-ios"
-timezone: Europe/Berlin
 
-logo: /assets/img/app-icon.png
-image: /assets/img/og.png
+lang: "en"
+app_icon: "/assets/img/app-icon.png"
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# Defaults set `lang` based on path
+# i18n data
 defaults:
   - scope:
       path: ""
     values:
-      layout: default
-      lang: en
-  - scope:
-      path: "de"
-    values:
-      lang: de
-  - scope:
-      path: "fr"
-    values:
-      lang: fr
-  - scope:
-      path: "zh-Hans"
-    values:
-      lang: zh-Hans
+      layout: "default"
+
+# SEO plugin (allowed on GitHub Pages)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude (optional)
+exclude:
+  - README.md
+  - node_modules
+  - vendor
+
+# Paths for legal docs (German authoritative versions)
+de_impressum_path: "/de/impressum.html"
+de_privacy_path: "/de/datenschutzerklaerung.html"

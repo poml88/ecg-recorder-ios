@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://poml88.github.io/ecg-recorder-ios/sitemap.xml

@@ -1,93 +1,42 @@
+---
+layout: nil
+---
 <!doctype html>
-<html lang="{{ page.lang | default: 'en' }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="white" />
-  <meta name="baseurl" content="{{ site.baseurl }}" />
-
-  <!-- Apple smart banner & deep-link data -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
   <meta name="apple-itunes-app" content="app-id=1541497051">
-
-  <!-- Jekyll SEO tag -->
-  {% seo %}
-
+  {%- seo -%}
   <!-- hreflang alternates -->
-  {% assign base = site.url | append: site.baseurl %}
-  <link rel="alternate" hreflang="x-default" href="{{ base }}/" />
-  <link rel="alternate" hreflang="en" href="{{ base }}/" />
-  <link rel="alternate" hreflang="de" href="{{ base }}/de/" />
-  <link rel="alternate" hreflang="fr" href="{{ base }}/fr/" />
-  <link rel="alternate" hreflang="zh-Hans" href="{{ base }}/zh-Hans/" />
-
-  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-  <script defer src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  {%- assign baseurl = site.baseurl | default: '' -%}
+  {%- assign url = site.url | append: baseurl -%}
+  {%- if site.data.i18n and site.data.i18n.languages -%}
+    {%- for l in site.data.i18n.languages -%}
+<link rel="alternate" hreflang="{{ l.hreflang }}" href="{{ site.url }}{{ site.baseurl }}{{ l.path }}">
+    {%- endfor -%}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/">
+  {%- endif -%}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="{{ '/' | relative_url }}">
-        <img class="app-icon" src="{{ '/assets/img/app-icon.png' | relative_url }}" alt="App icon" width="72" height="72" />
-        <div class="brand-text">
-          <span class="app-name">{{ site.title }}</span>
-          <span class="app-tagline">{% if page.lang == 'de' %}iPhone & iPad App{% elsif page.lang == 'fr' %}App iPhone et iPad{% elsif page.lang == 'zh-Hans' %}iPhone 与 iPad 应用{% else %}iPhone & iPad app{% endif %}</span>
-        </div>
-      </a>
-
-      <nav class="actions">
-        <a class="app-store-btn" href="https://apps.apple.com/app/id1541497051" rel="noopener" target="_blank" aria-label="Download on the App Store">
-          <span class="asb-top">{% if page.lang == 'de' %}Laden im{% elsif page.lang == 'fr' %}Télécharger sur{% elsif page.lang == 'zh-Hans' %}下载自{% else %}Download on the{% endif %}</span>
-          <span class="asb-bottom">App&nbsp;Store</span>
-        </a>
-
-        <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
-          <!-- Simple globe icon -->
-          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5" />
-            <path d="M2 12h20M12 2c3 4 3 16 0 20M12 2c-3 4-3 16 0 20" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          </svg>
-          <span class="sr-only">{% if page.lang == 'de' %}Sprache ändern{% elsif page.lang == 'fr' %}Changer de langue{% elsif page.lang == 'zh-Hans' %}切换语言{% else %}Change language{% endif %}</span>
-        </button>
-        <div class="lang-menu" id="langMenu" role="menu" aria-label="Language">
-          <a role="menuitem" data-lang="en" href="{{ '/' | relative_url }}">English</a>
-          <a role="menuitem" data-lang="de" href="{{ '/de/' | relative_url }}">Deutsch</a>
-          <a role="menuitem" data-lang="fr" href="{{ '/fr/' | relative_url }}">Français</a>
-          <a role="menuitem" data-lang="zh-Hans" href="{{ '/zh-Hans/' | relative_url }}">简体中文</a>
-        </div>
-      </nav>
+  <div class="hero">
+    <div class="container hero-inner">
+      {% include header.html %}
     </div>
-  </header>
-
-  <main class="container content">
-    {{ content }}
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="legal">
-        {% if page.lang == 'de' %}
-          <a href="{{ '/de/datenschutz/' | relative_url }}">Datenschutzerklärung</a>
-          <span>·</span>
-          <a href="{{ '/de/impressum/' | relative_url }}">Impressum</a>
-        {% elsif page.lang == 'fr' %}
-          <a href="{{ '/de/datenschutz/' | relative_url }}">Politique de confidentialité (DE)</a>
-          <span>·</span>
-          <a href="{{ '/de/impressum/' | relative_url }}">Mentions légales (DE)</a>
-        {% elsif page.lang == 'zh-Hans' %}
-          <a href="{{ '/de/datenschutz/' | relative_url }}">隐私政策（德文）</a>
-          <span>·</span>
-          <a href="{{ '/de/impressum/' | relative_url }}">法律声明（德文）</a>
-        {% else %}
-          <a href="{{ '/de/datenschutz/' | relative_url }}">Privacy Policy (German)</a>
-          <span>·</span>
-          <a href="{{ '/de/impressum/' | relative_url }}">Imprint (German)</a>
-        {% endif %}
-      </div>
-      <div class="copyright">© <span id="y"></span> ECG Recorder</div>
-    </div>
-  </footer>
-
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </div>
+  <div class="container">
+    <main class="prose">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </div>
+  <script>
+  // expose site.baseurl for early JS. Jekyll will substitute this.
+  window.__BASEURL__ = "{{ site.baseurl }}";
+  </script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
 </body>
 </html>
