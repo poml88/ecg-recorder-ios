@@ -44,7 +44,8 @@ Please note: This app is for informational purpose only. Use of the app and site
 I am a passionate runner and was looking for a heart rate monitor for sports application. I came across the Polar H10 and was intrigued by the possibility to obtain real ECG data from this device. To my surprise in late 2019 there was no iOS app on the App Store which offered recording or displaying of the data. There was one exception, but it was quite costly and not clear what was offered. Since I saw no other options and Polar provides a very good SDK vor the H10, I decided to develop my own app.
 
 ## Why an app with subscriptions?
-It turned out very soon that development of this app will consume a significant amount of time and in the end also costed money. I hope that the small fee asked will compensate a little bit for the invested time and money. I found that a model of several lengths subscriptions with a one week free trial will be the most fair, rather than having a one time payment where you don’t know what you will get.
+It turned out very soon that development of this app will consume a significant amount of time and in the end also costed money. I hope that the small fee asked will compensate a little bit for the invested time and money.\
+The app is free to download to get a first impression and connect to a device. It is possible to see a few seconds of the live charts. To activate the premium features, please make one of the available IN-APP purchases. Each subscription has a one week free trial, so all features can be tried free of charge. I found that a model of subscriptions of various durations with a one week free trial will be the most fair. It is also possible to do a one time payment without any recurring subscriptions.
 
 This App uses the excellent Purchase and PolarBle SDKs.
 
