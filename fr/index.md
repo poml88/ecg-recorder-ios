@@ -59,6 +59,4 @@ L'application est gratuite à télécharger pour se faire une première impressi
 
 Cette application utilise les excellents SDK Purchase et PolarBle.
 
-> **Remarque :** Les versions allemandes de l'\[Impressum]\({{ site.de\_impressum\_path | relative\_url }}) et de la \[Politique de confidentialité]\({{ site.de\_privacy\_path | relative\_url }}) sont les versions légalement contraignantes.
-
-
+> **Remarque :** Les versions allemandes de l'[Impressum]({{ site.de_impressum_path | relative_url }}) et de la [Politique de confidentialité]({{ site.de_privacy_path | relative_url }}) sont les versions légalement contraignantes.
