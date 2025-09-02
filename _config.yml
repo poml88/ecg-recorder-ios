@@ -1,0 +1,42 @@
+title: ECG Recorder
+description: Lightweight ECG recorder app for iPhone and iPad.
+url: "https://poml88.github.io"
+baseurl: "/ecg-recorder-ios"
+lang: en
+permalink: pretty
+
+theme: null
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /ecg-recorder-ios/assets/img/app-icon.svg
+      layout: default
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+languages:
+  - code: en
+    name: English
+    path: ""
+    hreflang: en
+  - code: de
+    name: Deutsch
+    path: /de
+    hreflang: de
+  - code: fr
+    name: Français
+    path: /fr
+    hreflang: fr
+  - code: zh-Hans
+    name: 简体中文
+    path: /zh
+    hreflang: zh-Hans

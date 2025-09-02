@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang }}">
+  <head>
+    <title>{{ page.title | default: site.title }}</title>
+    {% include head.html %}
+    <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
+    <script defer src="{{ site.baseurl }}/assets/js/lang.js"></script>
+  </head>
+  <body>
+    {% include header.html %}
+    <main class="content container">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>
