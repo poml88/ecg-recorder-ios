@@ -115,3 +115,58 @@ footer a:hover{ color: var(--fg); }
 
 /* Make the dropdown a touch friendlier */
 .lang-menu a{ padding: 12px 14px; font-size: 15px; }
+
+
+/* Header layout defaults (desktop/tablet) */
+.header{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  flex-wrap:nowrap;            /* prevent odd wrapping on medium screens */
+  justify-content:flex-start;
+}
+.header-main{                  /* middle block (title + badge) */
+  flex:1 1 auto;
+  min-width: 260px;
+}
+.lang-wrap{
+  margin-left:auto;            /* push globe to the right on wide screens */
+  position: relative;          /* anchor dropdown */
+}
+
+/* Make the App Store badge a bit smaller but crisp */
+.app-store-link { display: inline-block; line-height: 0; }
+.app-store-badge { height: 44px; width: auto; max-width: 100%; vertical-align: middle; }
+
+/* Tappable, larger language button */
+.lang-button{
+  padding: 10px 14px;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.lang-button .globe{ font-size: 18px; line-height: 1; }
+
+/* Phone layout: stack + center everything consistently */
+@media (max-width: 640px){
+  .header{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .app-icon{ width:72px; height:72px; }    /* smaller icon on phones */
+  .header-main{ width: 100%; }
+  .title, .subtitle{ text-align: center; margin: 0; }
+  .badges{ justify-content: center; }
+
+  .lang-wrap{
+    order: -1;                  /* put the language button at the top */
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;    /* center the globe button */
+  }
+
+  .app-store-badge{ height: 36px; } /* slightly smaller on phones */
+  .lang-menu{ left: 50%; transform: translateX(-50%); } /* center dropdown under button */
+}
