@@ -6,31 +6,38 @@
   <div>
     <h1 class="title">{{ page.title | default: site.title }}</h1>
     {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
-    <div class="badges">
-    
-    
-     {% assign lang = page.lang | default: site.lang | default: 'en' %}
-{% case lang %}
-  {% when 'de' %}{% assign badge_src = '/assets/img/app-store-badge-de.svg' %}
-  {% when 'fr' %}{% assign badge_src = '/assets/img/app-store-badge-fr.svg' %}
-  {% when 'zh-Hans' %}{% assign badge_src = '/assets/img/app-store-badge-zh-hans.svg' %}
-  {% else %}{% assign badge_src = '/assets/img/app-store-badge-en.svg' %}
-{% endcase %}
 
-<a class="appstore-link"
-   href="https://apps.apple.com/app/id1541497051"
-   aria-label="Download on the App Store"
-   rel="noopener">
-  <img class="appstore-badge"
-       src="{{ badge_src | relative_url }}"
-       alt="Download on the App Store"
-       width="180" height="60"
-       decoding="async">
-</a>
+<div class="badges">
+  {% assign _lang = page.lang | default: site.lang | default: 'en' %}
+  {% case _lang %}
+    {% when 'de' %}
+      <a href="https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051?itscg=30200&itsct=apps_box_badge&mttnsubad=1541497051" style="display: inline-block;">
+        <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/de-de?releaseDate=1607472000"
+             alt="Download on the App Store"
+             style="width: 246px; height: 82px; vertical-align: middle; object-fit: contain;" />
+      </a>
+    {% when 'fr' %}
+      <a href="https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051?itscg=30200&itsct=apps_box_badge&mttnsubad=1541497051" style="display: inline-block;">
+        <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/fr-fr?releaseDate=1607472000"
+             alt="Download on the App Store"
+             style="width: 261px; height: 82px; vertical-align: middle; object-fit: contain;" />
+      </a>
+    {% when 'zh-Hans' %}
+      <a href="https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051?itscg=30200&itsct=apps_box_badge&mttnsubad=1541497051" style="display: inline-block;">
+        <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/zh-cn?releaseDate=1607472000"
+             alt="Download on the App Store"
+             style="width: 224px; height: 82px; vertical-align: middle; object-fit: contain;" />
+      </a>
+    {% else %}
+      <!-- default: English -->
+      <a href="https://apps.apple.com/us/app/ecg-recorder-for-polar-h10/id1541497051?itscg=30200&itsct=apps_box_badge&mttnsubad=1541497051" style="display: inline-block;">
+        <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1607472000"
+             alt="Download on the App Store"
+             style="width: 246px; height: 82px; vertical-align: middle; object-fit: contain;" />
+      </a>
+  {% endcase %}
+</div>
 
-      
-      
-    </div>
   </div>
   <div class="lang-wrap" style="margin-left:auto;">
     <button class="lang-button" data-lang-button>
