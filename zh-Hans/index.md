@@ -1,11 +1,63 @@
 ---
-title: "ECG Recorder iOS"
+title: "Polar H10 心电图记录器"
+subtitle: "保存数据 — 显示实时图表。"
+description: "将 ECG、心率 (HR) 和 RR 数据导出为文本文件并显示实时图表。"
 lang: zh-Hans
 permalink: /zh-Hans/
 ---
 
-# ECG Recorder iOS
+{% include screenshots.html %}
 
-*简体中文内容即将推出。*
+## 应用支持与联系方式
 
-> 注意：具有法律效力的是德文版的[版本说明（Impressum）]({{ site.de_impressum_path | relative_url }})和[隐私政策]({{ site.de_privacy_path | relative_url }})。
+如有任何问题或反馈，请发送电子邮件至 **ecg-recorder [ a t ] cmdline [ d o t ] net**。或在 [GitHub](https://github.com/poml88/ecg-recorder-ios) 上打开 issue。
+
+## 关于所需的最低 H10 固件版本的说明
+
+要使 ECG 流式传输工作，您的 H10 需要*最低固件版本 3.0.35*。您可以使用 Polar Beat 和 Polar Flow 应用来更新 H10 的固件。
+
+## 演示视频
+
+请查看演示视频，了解如何将数据转换到 Numbers 或使用 EDFbrowser。
+
+* [在 iPhone 的 Numbers 中打开 txt ascii ECG 数据文件的演示](https://youtu.be/N58LFXaAeIQ)
+* [使用 EDFbrowser 转换 txt 文件的演示](https://youtu.be/dLscFwdWxSE)
+
+## 这个应用如何工作？
+
+本应用从 Polar H10 心率传感器记录三类数据：心电图（ECG）、心率（HR）以及 R-R 间期（RR）。要使 ECG 工作，H10 的最低固件版本为 3.0.35。每类数据都可以在实时图表中显示。可以通过“保存到照片”按钮对实时图表进行截图。也可以使用 iOS 控制中心的屏幕录制按钮录制实时图表的视频（可能需要在“设置 —> 控制中心”中启用）。
+
+如果用户拥有激活的订阅 “启用高级功能”（应用内购买），所有数据将被保存到 ECG Recorder 应用在 “文件” 应用中的目录，文件名为录制开始时的时间戳。所有数据均以 ASCII 文本文件形式保存。文本文件每行包含一个数值，便于导入其他软件进行数据处理。此外，高级功能还包括 ECG、HR 和 RR 的实时图表。
+
+### ECG 数据
+
+根据规格，ECG 数据以 130 Hz 的采样率采集（我的设备工作在 130.061 Hz），单位为微伏（µV）。这意味着每 7.692 毫秒（ms）记录一个数值。10 分钟录制会得到 78000 个取样点。当将数据导入例如 Microsoft Excel 或 Apple Numbers 时，您会得到一列长长的 µV 值。您可以将所有数值除以 1000 获得毫伏（mV）。您还需要自己创建时间列以便正确绘图。如果时间列以秒为单位，其值应为 0.007692、0.015385、0.023077、0.030769，……。以该时间列为 X 轴、以 mV 为 Y 轴即可绘制 mV 对秒的 ECG 曲线。
+ECG 实时图表中的 “设置标记（Set marker）” 按钮会向数据中加入一个 2000 µV 的值。该值在图表中很容易看到，也可以通过在数据中搜索找到。
+
+开源软件 [EDFbrowser](https://www.teuniz.net/edfbrowser) 可以将 ascii 文本文件转换为 .edf 文件，便于在该软件中浏览。一些用于导入到 Apple Numbers 和 EDFBrowser 的 [示例 ECG 数据](/ecg-recorder-ios/ecg-examples/examples.html) 以及 [演示视频](/ecg-recorder-ios/demo-video/videos.html) 可供下载使用。
+
+### HR 数据
+
+HR（平均每分钟心跳，bpm）约每秒记录一个数值。如果您想绘制该数据，需要创建一个时间列，按 1、2、3、4、…… 秒递增。
+
+### RR 数据
+
+RR 间期是指心电图上两次连续 R 波（QRS 波群）之间的时间间隔（其倒数即为心率）。RR 间期以毫秒（ms）为单位记录。
+
+## 服务条款
+
+请注意：本应用仅用于提供信息参考。应用与网站的使用并不旨在替代专业的医疗建议，如您有任何医疗状况或医疗问题，应及时联系您的医疗保健提供者。应用与网站**不提供医学建议**，内容中没有任何部分旨在构成医学诊断或治疗的专业建议。
+
+## 我为什么制作此应用？
+
+我是一个热衷跑步的人，正在寻找一款适用于运动的心率监测应用。我遇到了 Polar H10，并对从该设备获取真实 ECG 数据的可能性产生了兴趣。令我惊讶的是，截至 2019 年末，App Store 上没有哪个 iOS 应用能够同时提供数据记录与显示（有一个例外，但价格偏高且功能不明确）。鉴于当时没有其他选项，而 Polar 为 H10 提供了很好的 SDK，我决定自己开发这款应用。
+
+## 为什么采用订阅模式？
+
+很快我发现，开发这款应用会消耗大量时间并产生实际费用。我希望收取的小额费用能够部分补偿投入的时间与成本。
+该应用免费下载以便用户先行了解并连接设备，可查看几秒钟的实时图表。要激活高级功能，请购买可用的应用内购买（IN-APP 购买）之一。每个订阅均包含一周免费试用，因此所有功能都可先免费试用。我认为提供多种期限并包含一周免费试用的订阅模式是最公平的方式。也可以选择一次性付费而不使用任何循环订阅。
+
+本应用使用优秀的 Purchase 和 PolarBle SDKs。
+
+> **注意：** [Impressum]({{ site.de_impressum_path | relative_url }}) 与 [隐私政策]({{ site.de_privacy_path | relative_url }}) 的德文版本为具有法律约束力的版本。
+
