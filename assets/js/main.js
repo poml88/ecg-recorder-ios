@@ -1,4 +1,5 @@
-
+---
+---
 (function(){
   const supported = ['en','de','fr','zh-Hans'];
   const path = window.location.pathname.replace(/\/+$/,''); // trim trailing slash
