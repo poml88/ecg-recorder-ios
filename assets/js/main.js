@@ -1,4 +1,5 @@
 ---
+layout: null
 ---
 (function(){
   const supported = ['en','de','fr','zh-Hans'];
