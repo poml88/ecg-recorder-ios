@@ -59,4 +59,4 @@ Die App ist kostenlos zum Herunterladen, um einen ersten Eindruck zu gewinnen un
 
 Diese App verwendet die hervorragenden Purchase- und PolarBle-SDKs.
 
-> Hinweis: Rechtlich bindend sind die deutschen Versionen von [Impressum]({{ site.de_impressum_path | relative_url }}) und [Datenschutzerklärung]({{ site.de_privacy_path | relative_url }}).
+> **Hinweis:** Rechtlich bindend sind die deutschen Versionen von [Impressum]({{ site.de_impressum_path | relative_url }}) und [Datenschutzerklärung]({{ site.de_privacy_path | relative_url }}).
