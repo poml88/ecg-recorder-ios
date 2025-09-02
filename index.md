@@ -2,6 +2,7 @@
 title: "ECG Recorder for Polar H10"
 subtitle: "Saves data - displays live chart."
 description: "Exports ECG, HR and RR data as text files and displays a live chart."
+screenshots_string: "Screenshots"
 lang: en
 app_icon: "/assets/img/app-icon.png"
 permalink: /

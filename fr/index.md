@@ -2,6 +2,7 @@
 title: "Enregistreur ECG Polar H10"
 subtitle: "Enregistre les données — affiche un graphique en direct."
 description: "Exporte les données ECG, FC et RR au format texte et affiche un graphique en temps réel."
+screenshots_string: "Screenshots"
 lang: fr
 permalink: /fr/
 ---

@@ -5,6 +5,7 @@ subtitle: "Saves data - displays live chart."
 description: "Exports ECG, HR and RR data as text files and displays a live chart."
 url: "https://poml88.github.io"
 baseurl: "/ecg-recorder-ios"
+screenshots_string: "Screenshots"
 
 lang: "en"
 app_icon: "/assets/img/app-icon.png"
