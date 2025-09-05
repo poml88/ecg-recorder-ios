@@ -33,3 +33,6 @@ exclude:
 # Paths for legal docs (German authoritative versions)
 de_impressum_path: "/de/impressum.html"
 de_privacy_path: "/de/datenschutzerklaerung.html"
+
+webmaster_verifications:
+  google: QrAWHZJw-2VOfvtk-iumpq3WzKrOqB064iC5zJ6HGFE

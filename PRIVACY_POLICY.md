@@ -1,3 +1,6 @@
+---
+sitemap: false
+---
 # Privacy Policy
 
 ## Overview

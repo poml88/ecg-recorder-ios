@@ -1,4 +1,6 @@
-
+---
+sitemap: false
+---
 # ECG Recorder iOS – GitHub Pages Site
 
 This folder contains a minimal Jekyll site for the app’s landing page.
