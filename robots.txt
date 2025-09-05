@@ -5,5 +5,12 @@ permalink: /robots.txt
 
 User-agent: *
 Allow: /
+Disallow: /de/datenschutzerklaerung.html
+Disallow: /de/impressum.html
+Disallow: /DISCLAIMER.html
+Disallow: /PRIVACY_POLICY.html
+Disallow: /TERMS_of_SERVICE.html
+Disallow: /README.html
+Disallow: /demo-video/README.html
 
 Sitemap: {{ 'sitemap.xml' | absolute_url }}
