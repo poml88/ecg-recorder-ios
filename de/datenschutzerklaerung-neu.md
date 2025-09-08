@@ -1,196 +1,113 @@
-# Datenschutzerklärung  
-*Stand: 07.09.2025*
-
-Diese Datenschutzerklärung gilt für die **iOS-App „ECG Recorder for Polar H10“** (nachfolgend „App“) und die **Website** unter <https://poml88.github.io/ecg-recorder-ios/> (nachfolgend „Website“). Die App ist weltweit verfügbar; rechtlich bindend ist die **deutsche Fassung** dieser Erklärung.
+# Datenschutzerklärung
+*Stand: 08.09.2025*  
+Geltung für: **Website** <https://poml88.github.io/ecg-recorder-ios/> („Website“) und **iOS-App „ECG Recorder for Polar H10“** („App“).  
+**Deutsch ist rechtsverbindlich.** (Englische Fassung rein informativ.)
 
 ---
 
 ## 1. Verantwortlicher
-**Max Mustermann**  
-[bitte Postanschrift ergänzen]  
-E-Mail: mail@mail.de  
+**Philipp Pöml**  
+Limoursstr. 7, 76872 Minfeld, Deutschland  
+E-Mail: **ecg-recorder@cmdline.net**  
+Kein Datenschutzbeauftragter bestellt (nicht erforderlich).  
+Zuständige Aufsichtsbehörde (Sitz RLP): Landesdatenschutzbehörde Rheinland-Pfalz.
 
-- Kein Telefon  
-- Kein Datenschutzbeauftragter bestellt (nicht erforderlich nach DSGVO)  
-- Zuständige Aufsichtsbehörde: LfDI Rheinland-Pfalz – <https://www.datenschutz.rlp.de>
+## 2. Geltungsbereich, Zielgruppe, Rechtsgrundlagen allgemein
+- Geltung weltweit.  
+- Mindestalter: **18 Jahre** (keine Nutzung durch Minderjährige).  
+- Rechtsgrundlagen nach DSGVO, insb. **Art. 6 Abs. 1 lit. b** (Vertrag/Vertragsanbahnung), **lit. f** (berechtigte Interessen), **lit. c** (rechtliche Pflichten) sowie – bei Gesundheitsdaten – **Art. 9 Abs. 2 lit. a** (Einwilligung).  
+- **Kein Einsatz** von nicht notwendigen Cookies, Dritt-Tracking, Werbe-IDs oder Analysediensten.
 
----
+## 3. Datenkategorien (Überblick)
+- **App (lokal auf Ihrem Gerät):** EKG-Messdaten Polar H10, Metadaten der Messung, lokal gespeicherte TXT-Exporte.  
+- **Käufe/Abos:** Apple-Belege/Receipts, Produkt-IDs, Abo-Status, technische Basisdaten (z. B. System/Plattform) – verarbeitet über Apple/RevenueCat. **Keine** Gesundheitsdaten.  
+- **Support:** Inhalte Ihrer E-Mail und Absenderadresse.  
+- **Website:** rein statisch (GitHub Pages). Wir setzen **keine** eigenen Server-Logfiles, Cookies oder Tracker ein.
 
-## 2. Grundsätze & Zielgruppe
-- Zielgruppe: nicht für Personen unter 18 Jahren  
-- Gesundheitsdaten (EKG): besondere Kategorie personenbezogener Daten (Art. 9 DSGVO)  
-- Verarbeitung **ausschließlich lokal** auf Ihrem Gerät (siehe unten)  
+## 4. Verarbeitungen im Einzelnen
 
----
+### 4.1 App-Funktion (lokale Verarbeitung)
+- **Zweck:** Aufzeichnen/Anzeigen/Export von EKG-Daten des Polar H10.  
+- **Datenfluss:** Verarbeitung **ausschließlich lokal** auf Ihrem Gerät. **Keine** Übermittlung an uns/Server.  
+- **Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO (Nutzung der App-Funktion).  
+- **Speicherdauer:** bis zur **Löschung durch Sie** (App-Daten/Exports in der Dateien-App).  
+- **Hinweis:** Die App ist **kein Medizinprodukt** und **nicht für Notfälle** geeignet.
 
-## 3. Verarbeitung in der App
+### 4.2 Käufe, Abonnements, Lizenzprüfung (Apple StoreKit & RevenueCat)
+- **Zweck:** Abwicklung von In-App-Käufen/Abos, Lizenz-/Entitlement-Prüfung, Betrugsprävention, Verwaltung von Probezeiten und Verlängerungen.  
+- **Datenkategorien:** Kauf-/Abo-Informationen inkl. **Apple-Receipt**, Produkt-IDs, Status/Zeiten (z. B. aktiv/endet), ggf. technische Basisdaten (Gerät/OS/Plattform). **Keine** Gesundheits-/Fitnessdaten. **Keine** Zahlungsdaten bei uns (Zahlungen laufen über Apple).  
+- **Empfänger/Dienstleister:**  
+  - **Apple** (eigenständig Verantwortlicher) für Zahlungen/App-Store-Prozesse.  
+  - **RevenueCat, Inc.** als **Auftragsverarbeiter** (Processor) für Entitlements/Lizenzprüfung.  
+- **Rechtsgrundlagen:**  
+  - **Art. 6 Abs. 1 lit. b DSGVO** (Vertrag/Bezahlfunktionen),  
+  - **Art. 6 Abs. 1 lit. f DSGVO** (berechtigtes Interesse: Betrugsprävention, Lizenzsicherung).  
+- **Internationale Übermittlungen:** Verarbeitung kann in den **USA** erfolgen. Grundlage: **EU-Standardvertragsklauseln (SCC)** im **Data Processing Addendum (DPA)** mit RevenueCat.  
+- **Speicherdauer:** bis zur Beendigung/Abwicklung des Vertrages, Widerruf/Berechtigungsende sowie darüber hinaus, soweit **gesetzliche Aufbewahrungspflichten** oder unsere **berechtigten Interessen** (z. B. Nachweis/Klärung von Zahlungsstreitigkeiten) bestehen.  
+- **Betroffenenrechte/Löschung:** Bitte wenden Sie sich an uns; wir **koordinieren** Anfragen (Auskunft, Löschung) mit RevenueCat. (Hinweis: RevenueCat bietet zudem **compliance@revenuecat.com** als Kontakt – maßgeblich bleibt Ihre Kontaktaufnahme **bei uns**.)
 
-### 3.1 EKG-Daten
-- Speicherung und Verarbeitung **nur lokal**  
-- Export: **TXT-Datei** in der iOS-Dateien-App  
-- Keine Übermittlung an unsere Server  
-- Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Nutzungsvertrag) und Art. 9 Abs. 2 lit. a DSGVO (Einwilligung)  
+### 4.3 Support-Kommunikation
+- **Zweck:** Bearbeitung von Anfragen/Support.  
+- **Daten:** Ihre E-Mail, Inhaltsdaten, ggf. Anlagen.  
+- **Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO (Anfrage/Vertrag), lit. f (effiziente Kommunikation, Missbrauchsabwehr).  
+- **Speicherdauer:** bis Abschluss der Anfrage; bei kauf-/steuerrelevanten Inhalten nach gesetzlichen Fristen.
 
-### 3.2 Geplante HealthKit-Integration
-- Derzeit **nicht integriert**  
-- Bei Einführung: Zugriff nur mit iOS-Systemeinwilligung, eigener Einwilligungstext, Widerrufsmöglichkeit  
+### 4.4 Crash-Berichte (Apple)
+- **Zweck:** Fehlerdiagnose.  
+- **Datenfluss:** **Nur** wenn Sie dies in iOS global zulassen (Opt-in). Crash-Berichte werden **durch Apple** erhoben; wir erhalten **keine** Crashlogs, es sei denn, Sie senden uns aktiv Inhalte.  
+- **Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO (Qualität/Sicherheit), ggf. Art. 6 Abs. 1 lit. a (wenn Sie uns Berichte/Inhalte zusenden).  
+- **Empfänger:** Apple (eigener Verantwortlicher; eigene Datenschutzinformationen).
 
-### 3.3 Bluetooth
-- Verbindung zum Polar H10  
-- Daten: Gerätekennung (UUID), Verbindungsstatus  
-- Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO; § 25 Abs. 2 Nr. 2 TTDSG  
+### 4.5 HealthKit (Hinweis – derzeit nicht aktiv)
+- **Status:** **Nicht integriert.**  
+- **Vorschau:** Bei späterer Aktivierung erfolgt **zugriffsgesteuerte** Verarbeitung ausschließlich **lokal**, nur nach **iOS-Systemeinwilligung**; Rechtsgrundlage dann **Art. 9 Abs. 2 lit. a** DSGVO (ausdrückliche Einwilligung). Widerruf in der App/iOS, Löschoptionen für von der App erzeugte Health-Einträge.
 
-### 3.4 Käufe & Abos (StoreKit + RevenueCat)
-- Produkte: 1, 3, 12 Monate, Lifetime  
-- Zahlungen ausschließlich über Apple (keine Karten-/Zahlungsdaten bei uns)  
-- Lizenzprüfung via **RevenueCat** (USA, SCC/DPA)  
-- Rechtsgrundlage: Art. 6 Abs. 1 lit. b, lit. f DSGVO  
-- Aufbewahrung: kaufrelevante Daten bis zu **10 Jahre** (HGB/AO)  
+### 4.6 Website (statisch)
+- **Zweck:** Information über die App.  
+- **Besonderheiten:** **Keine** Formulare, **keine** Cookies/Tracker, **keine** eigenen Server-Logs. Hosting über einen externen Anbieter (z. B. GitHub Pages). Dabei kann der Hoster technisch notwendige Verarbeitungen als eigener Verantwortlicher durchführen (z. B. zur Auslieferung, Missbrauchsabwehr). Wir greifen **nicht** auf personenbezogene Logdaten zu.
 
-### 3.5 Support
-- Kontakt: mail@mail.de  
-- Daten: E-Mail, Inhaltsdaten, ggf. Anhänge (freiwillig)  
-- Speicherdauer: bis Abschluss, kaufrelevante Inhalte 10 Jahre  
+## 5. Keine automatisierten Entscheidungen / kein Profiling
+Es finden **keine** automatisierten Einzelfallentscheidungen i. S. d. Art. 22 DSGVO und **kein** Profiling statt.
 
-### 3.6 Crash-Reports
-- Nur via Apple, wenn Nutzer **„Mit Entwicklern teilen“** aktiviert hat  
-- Opt-in, pseudonymisierte Daten  
-- Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung gegenüber Apple)  
+## 6. Empfänger, Kategorien von Empfängern
+- **Zahlungen/App-Store:** Apple (eigener Verantwortlicher).  
+- **Abo/Lizenzverwaltung:** RevenueCat (Auftragsverarbeiter; DPA/SCC).  
+- **IT/Hosting/Support-Tools:** nur soweit erforderlich und im Rahmen von AV-Verträgen.  
+- **Keine Weitergabe** von Gesundheitsdaten an Dritte.
 
-### 3.7 Keine Profilbildung
-Es erfolgt **keine automatisierte Entscheidungsfindung** (Art. 22 DSGVO).
+## 7. Drittlandtransfers
+Soweit Daten in **Drittländern** (z. B. USA) verarbeitet werden, erfolgt dies auf Basis geeigneter Garantien, insb. **Standardvertragsklauseln (SCC)**. Kopie/Hinweise zum DPA/SCC stellen wir auf Anfrage zur Verfügung.
 
----
+## 8. Speicherdauer und Löschung (Zusammenfassung)
+- **App-Messdaten & Exporte (lokal):** bis zur **Löschung durch Sie** bzw. Deinstallation.  
+- **Kauf-/Abo-Daten (Apple/RevenueCat):** bis Vertragsende, Widerruf/Zweckerfüllung sowie darüber hinaus gem. gesetzlichen Pflichten/Nachweisinteressen.  
+- **Support-E-Mails:** bis Abschluss; ggf. längere Aufbewahrung nach Handels-/Steuerrecht.  
+- **Keine** eigenständigen Nutzungs- oder Telemetrie-Logs durch uns.
 
-## 4. Website (GitHub Pages)
-- Hosting durch GitHub Pages (GitHub, Inc./GitHub B.V.)  
-- Protokollierung: IP, Datum/Uhrzeit, URL, Referrer, User-Agent (Sicherheit, Stabilität)  
-- Keine eigenen Cookies/Tracker, nur technisch erforderliche Hoster-Cookies  
-- Keine eingebetteten Fremdinhalte  
+## 9. Ihre Rechte (DSGVO)
+Sie haben – unter den gesetzlichen Voraussetzungen – das Recht auf **Auskunft**, **Berichtigung**, **Löschung**, **Einschränkung**, **Datenübertragbarkeit** sowie **Widerspruch** gegen Verarbeitungen nach Art. 6 Abs. 1 lit. f DSGVO.  
+Erteilte **Einwilligungen** (z. B. künftig HealthKit) können Sie **jederzeit mit Wirkung für die Zukunft widerrufen**.  
+Sie haben das Recht auf Beschwerde bei einer **Datenschutzaufsichtsbehörde**, insbesondere an Ihrem Wohnsitz oder in Rheinland-Pfalz.
 
----
+## 10. Sicherheit (TOMs – Kurzüberblick)
+- **Lokalität:** Gesundheits-/Messdaten verbleiben auf dem Gerät.  
+- **Zugriffskontrolle:** iOS-Schutzmechanismen (z. B. Geräte-PIN/Biometrie, Sandbox).  
+- **Datenminimierung:** Nur erforderliche Abo-/Lizenzdaten bei Apple/RevenueCat.  
+- **Verträge:** AV-Verträge (u. a. **DPA/SCC** mit RevenueCat).  
+- **Keine** Übertragung von Gesundheitsdaten an Dritte.
 
-## 5. Empfänger
-- **Apple** (App Store, Zahlungen, Crashreports) – eigenständige Verantwortlichkeit  
-- **RevenueCat, Inc. (USA)** – Auftragsverarbeiter, SCC/DPA  
-- **E-Mail-Provider** (abhängig vom Mailanbieter des Nutzers)  
+## 11. Kontakt für Datenschutzanfragen
+Anfragen zu Auskunft, Berichtigung, Löschung, Widerruf oder Datenübertragbarkeit richten Sie bitte an **ecg-recorder@cmdline.net**.  
+Wir beantworten Ihre Anfrage **innerhalb eines Monats** (Art. 12 Abs. 3 DSGVO) und koordinieren ggf. mit unseren Auftragsverarbeitern (z. B. RevenueCat).
 
----
-
-## 6. Drittlandübermittlungen
-- RevenueCat verarbeitet Daten auch in den **USA**, auf Basis von **Standardvertragsklauseln (SCC)**  
-
----
-
-## 7. Speicherdauern
-- App-Daten: lokal bis zur Löschung/Deinstallation  
-- Käufe/Abos: bis zu 10 Jahre  
-- Support-E-Mails: bis Abschluss, ggf. 10 Jahre  
-- Crash-Reports: gemäß Apple-Vorgaben (nur opt-in)  
-
----
-
-## 8. Sicherheit
-- iOS-Datenverschlüsselung  
-- TLS für Übertragungen  
-- Keychain für sensible Tokens  
-- Minimalprinzip (keine Serverhaltung von EKG-Daten)  
-
----
-
-## 9. Rechte der Nutzer
-Sie haben nach DSGVO das Recht auf:
-- Auskunft (Art. 15)  
-- Berichtigung (Art. 16)  
-- Löschung (Art. 17)  
-- Einschränkung (Art. 18)  
-- Datenübertragbarkeit (Art. 20)  
-- Widerspruch (Art. 21)  
-- Widerruf von Einwilligungen (Art. 7 Abs. 3)  
-
-**Beschwerderecht:** bei der Aufsichtsbehörde RLP oder jeder anderen zuständigen Behörde.  
+## 12. Änderungen dieser Datenschutzerklärung
+Wir können diese Erklärung anpassen, wenn sich Funktionen, Rechtslage oder Dienstleister ändern. Die jeweils gültige Fassung wird hier veröffentlicht. Wesentliche Änderungen werden in der App/auf der Website **vorab** oder **bei Inkrafttreten** angezeigt.
 
 ---
 
-## 10. Pflichtangaben
-- Für Nutzung der Kernfunktionen sind bestimmte Daten erforderlich (z. B. Bluetooth, Kaufbeleg). Ohne diese eingeschränkte Funktionalität.  
-
----
-
-## 11. Änderungen
-Diese Erklärung wird bei Bedarf angepasst. Die aktuelle Version ist in der App und auf der Website abrufbar.
-
-
-
-# EN
-
-# Privacy Information (non-binding, for information only)
-
-*Last updated: September 7, 2025*
-
-This document provides an **informational summary in English** of how data is handled by the **iOS App "ECG Recorder for Polar H10"** and the associated **website** (<https://poml88.github.io/ecg-recorder-ios/>).  
-The legally binding version is the **German Privacy Policy** ("Datenschutzerklärung").
-
----
-
-## Who is responsible?
-**Max Mustermann**  
-Email: mail@mail.de  
-Based in Germany (Rhineland-Palatinate).  
-No data protection officer required by law.  
-
----
-
-## App: Data Processing
-
-- **ECG Data**: Stored and processed **only locally** on your device. No transmission to our servers.  
-- **Export**: You may export ECG sessions as **TXT files** to your iOS Files app.  
-- **HealthKit**: Not yet integrated; if added, will require your explicit system consent.  
-- **Bluetooth**: Used only to connect to your Polar H10 sensor.  
-- **Purchases**: Premium features available via in-app purchases (1, 3, 12 months, or Lifetime). Payment handled entirely by **Apple**.  
-- **License Validation**: Managed through **RevenueCat** (USA). RevenueCat processes purchase receipts and product IDs to verify entitlements.  
-- **Support**: If you email us (mail@mail.de), we process the email and any attachments you send. Please avoid sending sensitive health data unencrypted.  
-- **Crash Reports**: Provided only by Apple if you have opted in to “Share with App Developers” in iOS.  
-
----
-
-## Website
-- Hosted via **GitHub Pages**.  
-- Technical logs (IP address, timestamp, URL, user agent) are collected by GitHub for security purposes.  
-- No analytics, no tracking, no cookies set by us.  
-
----
-
-## Data Recipients
-- **Apple** (App Store payments, optional crash reports).  
-- **RevenueCat, Inc.** (purchase validation, USA – under EU Standard Contractual Clauses).  
-- **Your email provider** (if you send us support requests).  
-
----
-
-## Storage Periods
-- **ECG data**: until you delete it or uninstall the app.  
-- **Purchase records**: up to 10 years (legal obligations).  
-- **Support emails**: until resolved, longer if required by law.  
-- **Crash reports**: according to Apple’s settings and policies.  
-
----
-
-## Your Rights (EU / GDPR)
-If you are in the EU, you have the right to request:  
-- access, correction, deletion, restriction, portability, objection, withdrawal of consent.  
-You may also lodge a complaint with your local data protection authority.  
-
----
-
-## Security
-- Local device encryption (iOS Data Protection).  
-- TLS encryption for communications.  
-- No server storage of ECG data.  
-
----
-
-## Notes
-- Minimum age: 18+  
-- The German version of the Privacy Policy is legally binding.  
-- For any privacy questions, contact: **mail@mail.de**
+### Kurzfassung (TL;DR)
+- **Keine Serververarbeitung** Ihrer EKG-Daten – alles **lokal**.  
+- **Käufe/Abos** über Apple; **RevenueCat** verwaltet nur Lizenz-/Abo-Status (**ohne** Gesundheitsdaten).  
+- **Keine Cookies/Tracker** auf der Website.  
+- **Support** per E-Mail.  
+- **Rechte nach DSGVO**: Auskunft, Löschung, Widerruf etc.
