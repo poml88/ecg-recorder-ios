@@ -86,8 +86,8 @@ Sollten einzelne Bestimmungen unwirksam sein/werden, bleibt die Wirksamkeit der 
 ---
 
 ## Kontakt
-**Max Mustermann** • [STRAẞE HAUSNUMMER], [PLZ ORT], Deutschland  
-E-Mail: **mail@mail.de**  
+**Philipp Pöml** • Limoursstr. 7, 76872 Minfeld, Deutschland
+E-Mail: **ecg-recorder@cmdline.net**  
 Zeitzone für Fristen/Kommunikation: **Europe/Berlin**.
 
 
