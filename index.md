@@ -22,7 +22,7 @@ Have a look at the demo videos on how to convert the data into Numbers or EDFbro
 - [Demo convert txt file with EDFbrowser](https://youtu.be/dLscFwdWxSE)
 
 ## How does this app work?
-This App records three types of data from a Polar H10 heart rate sensor: electrocardiogram (ECG), heart rate (HR) and the R-R interval (RR). Minimum firmware of the H10 for ECG to work is 3.0.35. Each type of data can also be displayed in a real time chart. Screenshots of the real time chart can be taken via the “save to photos” button. A video of the live chart can be recorded using the iOS screen recorder button from the iOS Control Center (maybe needs to be enabled via Settings —> Control Center).
+This App records three types of data from a Polar H10 heart rate sensor: electrocardiogram (ECG), heart rate (HR) and the R-R interval (RR). **Minimum firmware of the H10 for ECG to work is 3.0.35.** Each type of data can also be displayed in a real time chart. Screenshots of the real time chart can be taken via the “save to photos” button. A video of the live chart can be recorded using the iOS screen recorder button from the iOS Control Center (maybe needs to be enabled via Settings —> Control Center).
 
 If the user has an active subscription "Enable premium features" (IN-APP purchase), all data is saved to the ECG Recorder App's directory in the "Files" app, the file name being the timestamp when the recording started. All data is saved as an ascii text file. The text files contain one value per line and should be easily imported into other software for data processing. In addition, the premium features include live / real-time charts of ECG, HR, and RR.
 
