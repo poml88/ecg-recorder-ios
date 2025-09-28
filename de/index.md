@@ -13,9 +13,8 @@ permalink: /de/
 
 Bitte senden Sie alle Fragen und Kommentare per E-Mail an **ecg-recorder [ a t ] cmdline [ d o t ] net**. Alternativ können Sie ein Issue auf [GitHub](https://github.com/poml88/ecg-recorder-ios) eröffnen.
 
-## Hinweis zur minimalen H10-Firmwareversion
-
-Damit das EKG-Streaming funktioniert, benötigen Sie auf Ihrem H10 eine *Mindest-Firmwareversion 3.0.35*. Sie können Ihr H10 mit den Apps Polar Beat und Polar Flow aktualisieren.
+## Hinweis zur Apple Health-Unterstützung
+Derzeit erlaubt Apple das Schreiben von EKG-Daten in Apple Health nicht (mit Ausnahme von EKG-Daten, die mit der Apple Watch aufgezeichnet wurden). Daher kann ich diese Funktion nicht hinzufügen. HR- und RR-Daten könnten in Apple Health geschrieben werden, daher werde ich diese Funktion möglicherweise in Zukunft auf Anfrage hinzufügen.
 
 ## Demo-Videos
 
@@ -26,7 +25,7 @@ Sehen Sie sich die Demo-Videos an, die zeigen, wie die Daten in Numbers oder mit
 
 ## Wie funktioniert diese App?
 
-Diese App zeichnet drei Datentypen von einem Polar H10 Herzfrequenzsensor auf: Elektrokardiogramm (EKG), Herzfrequenz (HR) und das R-R-Intervall (RR). Für das EKG ist eine Mindest-Firmware des H10 von 3.0.35 erforderlich. Jeder Datentyp kann außerdem in einem Echtzeit-Diagramm angezeigt werden. Bildschirmfotos des Echtzeit-Diagramms können über die Schaltfläche „save to photos“ aufgenommen werden. Ein Video des Live-Diagramms kann mit der iOS-Bildschirmaufnahme-Schaltfläche aus dem iOS Kontrollzentrum aufgenommen werden (möglicherweise muss diese Funktion zunächst unter Einstellungen → Kontrollzentrum aktiviert werden).
+Diese App zeichnet drei Datentypen von einem Polar H10 Herzfrequenzsensor auf: Elektrokardiogramm (EKG), Herzfrequenz (HR) und das R-R-Intervall (RR). **Für das EKG ist eine Mindest-Firmware des H10 von 3.0.35 erforderlich.** Jeder Datentyp kann außerdem in einem Echtzeit-Diagramm angezeigt werden. Bildschirmfotos des Echtzeit-Diagramms können über die Schaltfläche „save to photos“ aufgenommen werden. Ein Video des Live-Diagramms kann mit der iOS-Bildschirmaufnahme-Schaltfläche aus dem iOS Kontrollzentrum aufgenommen werden (möglicherweise muss diese Funktion zunächst unter Einstellungen → Kontrollzentrum aktiviert werden).
 
 Wenn der Nutzer ein aktives Abonnement „Enable premium features“ (In-App-Kauf) hat, werden alle Daten im Verzeichnis der ECG Recorder App in der „Dateien“-App gespeichert; der Dateiname ist der Zeitstempel, zu dem die Aufzeichnung begonnen hat. Alle Daten werden als ASCII-Textdatei gespeichert. Die Textdateien enthalten einen Wert pro Zeile und sollten sich leicht in andere Software zur Datenverarbeitung importieren lassen. Zusätzlich beinhalten die Premium-Funktionen Live-/Echtzeit-Diagramme für EKG, HR und RR.
 
