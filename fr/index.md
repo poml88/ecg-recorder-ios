@@ -13,9 +13,8 @@ permalink: /fr/
 
 Veuillez envoyer un courriel à **ecg-recorder [ a t ] cmdline [ d o t ] net** pour toute question ou remarque. Vous pouvez également ouvrir une issue sur [GitHub](https://github.com/poml88/ecg-recorder-ios).
 
-## Remarque sur la version minimale du firmware H10 requise
-
-Pour que le streaming ECG fonctionne, vous avez besoin d'une *version minimale du firmware 3.0.35* sur votre H10. Vous pouvez mettre à jour votre H10 via les applications Polar Beat et Polar Flow.
+## Remarque concernant la prise en charge d'Apple Health
+Actuellement, Apple n'autorise pas l'écriture de données ECG dans Apple Health (à l'exception des données ECG enregistrées avec l'Apple Watch). Je ne suis donc pas en mesure d'ajouter cette fonctionnalité. Les données HR et RR peuvent être écrites dans Apple Health, je pourrais donc ajouter cette fonctionnalité à l'avenir sur demande.
 
 ## Vidéos de démonstration
 
@@ -26,7 +25,7 @@ Regardez les vidéos de démonstration montrant comment convertir les données d
 
 ## Comment fonctionne cette application ?
 
-Cette application enregistre trois types de données provenant d'un capteur de fréquence cardiaque Polar H10 : l'électrocardiogramme (ECG), la fréquence cardiaque (HR) et l'intervalle R-R (RR). La version minimale du firmware du H10 pour que l'ECG fonctionne est 3.0.35. Chaque type de donnée peut également être affiché sous forme de graphique en temps réel. Des captures d'écran du graphique en temps réel peuvent être prises via le bouton « save to photos ». Une vidéo du graphique en direct peut être enregistrée à l'aide du bouton d'enregistrement d'écran iOS depuis le Centre de contrôle iOS (peut nécessiter d'être activé via Réglages → Centre de contrôle).
+Cette application enregistre trois types de données provenant d'un capteur de fréquence cardiaque Polar H10 : l'électrocardiogramme (ECG), la fréquence cardiaque (HR) et l'intervalle R-R (RR). **La version minimale du firmware du H10 pour que l'ECG fonctionne est 3.0.35.** Chaque type de donnée peut également être affiché sous forme de graphique en temps réel. Des captures d'écran du graphique en temps réel peuvent être prises via le bouton « save to photos ». Une vidéo du graphique en direct peut être enregistrée à l'aide du bouton d'enregistrement d'écran iOS depuis le Centre de contrôle iOS (peut nécessiter d'être activé via Réglages → Centre de contrôle).
 
 Si l'utilisateur dispose d'un abonnement actif « Enable premium features » (achat intégré), toutes les données sont sauvegardées dans le répertoire de l'application ECG Recorder dans l'app « Fichiers », le nom de fichier étant l'horodatage du début de l'enregistrement. Toutes les données sont enregistrées sous forme de fichiers texte ASCII. Les fichiers texte contiennent une valeur par ligne et peuvent être facilement importés dans d'autres logiciels pour traitement des données. De plus, les fonctionnalités premium incluent des graphiques en direct / en temps réel pour l'ECG, la HR et le RR.
 
