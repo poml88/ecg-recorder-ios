@@ -13,9 +13,8 @@ permalink: /zh-Hans/
 
 如有任何问题或反馈，请发送电子邮件至 **ecg-recorder [ a t ] cmdline [ d o t ] net**。或在 [GitHub](https://github.com/poml88/ecg-recorder-ios) 上打开 issue。
 
-## 关于所需的最低 H10 固件版本的说明
-
-要使 ECG 流式传输工作，您的 H10 需要*最低固件版本 3.0.35*。您可以使用 Polar Beat 和 Polar Flow 应用来更新 H10 的固件。
+## 关于苹果健康支持的说明
+目前苹果不允许将心电图数据写入苹果健康应用（使用Apple Watch记录的心电图数据除外）。因此我无法添加此功能。心率和呼吸频率数据可写入苹果健康，未来若有需求，我可能会添加此功能。
 
 ## 演示视频
 
