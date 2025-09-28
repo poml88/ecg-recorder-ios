@@ -13,8 +13,8 @@ permalink: /
 ## App support and contact
 Please email **ecg-recorder [ a t ] cmdline [ d o t ] net** with all questions and comments. Or open an issue on [GitHub](https://github.com/poml88/ecg-recorder-ios).
 
-## Note on minimum H10 firmware version required
-For ECG streaming to work you need a *minimum firmware version of 3.0.35* on your H10. You can update your H10 using the Polar Beat and Polar Flow apps.
+## Note on Apple Health Support
+Currently, Apple does not allow the writing of ECG data to Apple Health (with the exception of ECG data recorded with the Apple Watch). Hence, I am not able to add this functionality. HR and RR data could be written to Apple Health so, I might add this feature in the future on request.
 
 ## Demo videos
 Have a look at the demo videos on how to convert the data into Numbers or EDFbrowser.
