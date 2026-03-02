@@ -3,8 +3,8 @@
 title: "ECG Recorder for Polar H10"
 subtitle: "Saves data - displays live chart."
 description: "Exports ECG, HR and RR data as text files and displays a live chart."
-url: "https://poml88.github.io"
-baseurl: "/ecg-recorder-ios"
+url: "https://ecgh10.app"
+baseurl: ""
 screenshots_string: "Screenshots"
 
 lang: "en"
