@@ -34,7 +34,7 @@ permalink: /zh-Hans/
 根据规格，ECG 数据以 130 Hz 的采样率采集（我的设备工作在 130.061 Hz），单位为微伏（µV）。这意味着每 7.692 毫秒（ms）记录一个数值。10 分钟录制会得到 78000 个取样点。当将数据导入例如 Microsoft Excel 或 Apple Numbers 时，您会得到一列长长的 µV 值。您可以将所有数值除以 1000 获得毫伏（mV）。您还需要自己创建时间列以便正确绘图。如果时间列以秒为单位，其值应为 0.007692、0.015385、0.023077、0.030769，……。以该时间列为 X 轴、以 mV 为 Y 轴即可绘制 mV 对秒的 ECG 曲线。
 ECG 实时图表中的 “设置标记（Set marker）” 按钮会向数据中加入一个 2000 µV 的值。该值在图表中很容易看到，也可以通过在数据中搜索找到。
 
-开源软件 [EDFbrowser](https://www.teuniz.net/edfbrowser) 可以将 ascii 文本文件转换为 .edf 文件，便于在该软件中浏览。一些用于导入到 Apple Numbers 和 EDFBrowser 的 [示例 ECG 数据](ecg-examples/examples.html) 以及 [演示视频](demo-video/videos.html) 可供下载使用。
+开源软件 [EDFbrowser](https://www.teuniz.net/edfbrowser) 可以将 ascii 文本文件转换为 .edf 文件，便于在该软件中浏览。一些用于导入到 Apple Numbers 和 EDFBrowser 的 [示例 ECG 数据](/ecg-examples/examples.html) 以及 [演示视频](/demo-video/videos.html) 可供下载使用。
 
 ### HR 数据
 
