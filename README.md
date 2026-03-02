@@ -1,5 +1,5 @@
 # ECG Recorder for Polar H10 on iOS
 
-Please visit the hoome page of the app:
-https://poml88.github.io/ecg-recorder-ios/
+Please visit the home page of the app:
+https://ecgh10.app/
 
