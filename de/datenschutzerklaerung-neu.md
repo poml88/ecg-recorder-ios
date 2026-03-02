@@ -1,6 +1,6 @@
 # Datenschutzerklärung
 *Stand: 08.09.2025*  
-Geltung für: **Website** <https://poml88.github.io/ecg-recorder-ios/> („Website“) und **iOS-App „ECG Recorder for Polar H10“** („App“).  
+Geltung für: **Website** <https://ecgh10.app/> („Website“) und **iOS-App „ECG Recorder for Polar H10“** („App“).  
 **Deutsch ist rechtsverbindlich.** (Englische Fassung rein informativ.)
 
 ---

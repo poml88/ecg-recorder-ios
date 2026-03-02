@@ -1,6 +1,6 @@
 # Allgemeine Geschäftsbedingungen (AGB) / Nutzungsbedingungen
 *Stand: 07.09.2025*  
-Geltung für: **Website** <https://poml88.github.io/ecg-recorder-ios/> („Website“) und **iOS-App „ECG Recorder for Polar H10“** („App“).  
+Geltung für: **Website** <https://ecgh10.app/> („Website“) und **iOS-App „ECG Recorder for Polar H10“** („App“).  
 Rechtlich bindend ist die **deutsche** Fassung; Übersetzungen dienen nur der Information.
 
 ## 1. Anbieter, Geltungsbereich, Vertragssprache
@@ -96,7 +96,7 @@ Zeitzone für Fristen/Kommunikation: **Europe/Berlin**.
 
 # Terms of Use (Informational English Version)
 *Last updated: 07 September 2025*  
-Applies to: **Website** <https://poml88.github.io/ecg-recorder-ios/> (“Website”) and **iOS App “ECG Recorder for Polar H10”** (“App”).  
+Applies to: **Website** <https://ecgh10.app/> (“Website”) and **iOS App “ECG Recorder for Polar H10”** (“App”).  
 
 ⚠️ **Note**: This English version is for information purposes only. The legally binding version is the **German “Allgemeine Geschäftsbedingungen (AGB)”**.  
 
