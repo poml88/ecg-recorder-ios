@@ -1,3 +1,6 @@
+---
+sitemap: false
+---
 # Datenschutzerklärung
 *Stand: 08.09.2025*  
 Geltung für: **Website** <https://ecgh10.app/> („Website“) und **iOS-App „ECG Recorder for Polar H10“** („App“).  

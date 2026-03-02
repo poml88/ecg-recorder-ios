@@ -1,3 +1,6 @@
+---
+sitemap: false
+---
 # Impressum
 
 *Stand: 07.09.2025*
