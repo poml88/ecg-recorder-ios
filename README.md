@@ -5,7 +5,7 @@ sitemap: false
 
 This folder contains a minimal Jekyll site for the app’s landing page.
 
-**Live URL:** https://poml88.github.io/ecg-recorder-ios/
+**Live URL:** https://ecgh10.app/
 
 ## Notes
 
