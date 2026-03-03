@@ -1,7 +1,7 @@
 ---
 title: "ECG Recorder App for Polar H10 (iOS)"
 title_tagline: "Export ECG & RR Data"
-subtitle: "Saves data - displays live chart."
+subtitle: "Records and exports Polar H10 ECG data with live visualization."
 description: "Record ECG with Polar H10. Export ECG, heart rate (HR) and RR interval data as text files and view a live chart on iPhone and iPad."
 screenshots_string: "Screenshots"
 lang: en
