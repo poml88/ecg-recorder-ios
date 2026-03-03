@@ -10,8 +10,9 @@ layout: nil
   <meta name="theme-color" content="#ffffff">
   <meta name="apple-itunes-app" content="app-id=1541497051">
   
-  {%- seo -%}
+  {%- seo title=false -%}
   
+  <title>{{ page.title | default: site.title }} | {{ page.title_tagline | default: site.description }}</title>
   <meta name="robots" content="max-image-preview:large">
   <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
