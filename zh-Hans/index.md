@@ -1,7 +1,8 @@
 ---
-title: "Polar H10 心电图记录器"
-subtitle: "保存数据 — 显示实时图表。"
-description: "将 ECG、心率 (HR) 和 RR 数据导出为文本文件并显示实时图表。"
+title: "适用于 Polar H10 的 ECG 记录应用 (iOS)"
+title_tagline: "导出 ECG 和 RR 数据"
+subtitle: "通过 Polar H10 蓝牙心率传感器记录和导出 ECG、心率 (HR) 和 RR 数据，并在 iPhone 和 iPad 上实时显示波形图。"
+description: "使用 Polar H10 记录 ECG。将 ECG、心率 (HR) 和 RR 间期数据导出为文本文件，并在 iPhone 和 iPad 上实时查看图表。"
 screenshots_string: "屏幕截图"
 lang: zh-Hans
 permalink: /zh-Hans/

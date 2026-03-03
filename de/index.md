@@ -1,7 +1,8 @@
 ---
-title: "EKG Recorder für Polar H10"
-subtitle: "Speichert Daten — zeigt Live-Diagramm an."
-description: "Exportiert EKG-, HR- und RR-Daten als Textdateien und zeigt ein Live-Diagramm an."
+title: "EKG Recorder App für Polar H10 (iOS)"
+title_tagline: "Export von EKG- & RR-Daten"
+subtitle: "EKG-, Herzfrequenz- (HR) und RR-Daten vom Polar H10 Bluetooth-Herzfrequenzsensor aufzeichnen und exportieren – mit Live-Diagramm auf iPhone und iPad."
+description: "EKG mit dem Polar H10 aufzeichnen. EKG-, Herzfrequenz- (HR) und RR-Intervall-Daten als Textdateien exportieren und ein Live-Diagramm auf iPhone und iPad anzeigen."
 screenshots_string: "Bildschirmfotos"
 lang: de
 permalink: /de/

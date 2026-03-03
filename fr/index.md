@@ -1,7 +1,8 @@
 ---
-title: "Enregistreur ECG Polar H10"
-subtitle: "Enregistre les données — affiche un graphique en direct."
-description: "Exporte les données ECG, FC et RR au format texte et affiche un graphique en temps réel."
+title: "Application d’enregistrement ECG pour Polar H10 (iOS)"
+title_tagline: "Export des données ECG et RR"
+subtitle: "Enregistrez et exportez les données ECG, fréquence cardiaque (HR) et intervalles RR du cardiofréquencemètre Bluetooth Polar H10 avec affichage en direct sur iPhone et iPad."
+description: "Enregistrez un ECG avec le Polar H10. Exportez les données ECG, fréquence cardiaque (HR) et intervalles RR sous forme de fichiers texte et visualisez un graphique en direct sur iPhone et iPad."
 screenshots_string: "Captures d’écran"
 lang: fr
 permalink: /fr/
