@@ -6,6 +6,8 @@
   --accent: #3b82f6; /* blue accent */
   --card: #f9fafb;
   --border: #e5e7eb;
+  --hero-soft: #eff6ff;
+  --accent-deep: #1d4ed8;
 }
 
 *{box-sizing:border-box;}
@@ -30,11 +32,13 @@ body{
 .badges{display:flex; gap:12px; align-items:center; flex-wrap:wrap;}
 
 .hero{
-  background: linear-gradient(180deg, rgba(59,130,246,.08), rgba(0,0,0,0));
+  background:
+    radial-gradient(circle at top left, rgba(59,130,246,.14), transparent 36%),
+    linear-gradient(180deg, rgba(59,130,246,.08), rgba(0,0,0,0));
   border-bottom: 1px solid var(--border);
   margin-bottom: 24px;
 }
-.hero-inner{padding: 12px 0 24px;}
+.hero-inner{padding: 12px 0 28px;}
 
 .lang-switch{
   margin-left:auto;
@@ -80,6 +84,88 @@ footer a{ color: var(--muted); }
 footer a:hover{ color: var(--fg); }
 .prose{max-width: 72ch;}
 .prose img{max-width:100%; border-radius: 12px;}
+.prose > * + *{margin-top: 1rem;}
+.prose > h2,
+.prose > h3{scroll-margin-top: 2rem;}
+.prose > h2{
+  margin-top: 3.5rem;
+  margin-bottom: .85rem;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  line-height: 1.2;
+}
+.prose > h3{
+  margin-top: 2rem;
+  margin-bottom: .6rem;
+  font-size: 1.1rem;
+}
+.prose > ul{
+  padding-left: 1.2rem;
+}
+.prose > p,
+.prose > li{
+  color: #1f2937;
+}
+
+.landing-intro{
+  margin: 0 0 2.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(59,130,246,.12);
+  border-radius: 24px;
+  background: linear-gradient(180deg, #ffffff, var(--hero-soft));
+  box-shadow: 0 16px 40px rgba(59,130,246,.08);
+}
+.eyebrow{
+  margin: 0 0 .75rem;
+  color: var(--accent-deep);
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.lead{
+  margin: 0;
+  max-width: 60ch;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  line-height: 1.7;
+}
+.value-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 1.5rem;
+}
+.value-card{
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(255,255,255,.9);
+}
+.value-card h3{
+  margin: 0 0 .45rem;
+  font-size: 1rem;
+}
+.value-card p{
+  margin: 0;
+  color: var(--muted);
+  font-size: .96rem;
+}
+.trust-strip{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+  margin-top: 1.2rem;
+}
+.trust-strip span{
+  display:inline-flex;
+  align-items:center;
+  padding: .55rem .85rem;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid rgba(59,130,246,.16);
+  color: #1f2937;
+  font-size: .92rem;
+  font-weight: 600;
+}
 
 /* App Store badge sizing (keeps Apple proportions, smaller by default) */
 .app-store-link { display: inline-block; line-height: 0; }
@@ -173,18 +259,69 @@ footer a:hover{ color: var(--fg); }
 
 .sshot-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
   align-items: start;
+}
+.screenshots-section{
+  margin: 2.5rem 0 2.75rem;
+}
+.screenshots-head{
+  margin-bottom: 1rem;
+}
+.screenshots-head h2{
+  margin: 0 0 .35rem;
+}
+.screenshots-head p{
+  margin: 0;
+  color: var(--muted);
 }
 .sshot {
   background: transparent;
   text-align: center;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
 }
-.sshot a { display: inline-block; border-radius: 20px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
-.sshot img { display: block; width: 100%; height: auto; max-width: 320px; }
-.sshot figcaption { margin-top: 6px; font-size: 0.9rem; color: #333; }
+.sshot a {
+  display: inline-block;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 18px 42px rgba(15,23,42,0.16);
+  background: #fff;
+}
+.sshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 360px;
+}
+.sshot figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #374151;
+  font-weight: 600;
+}
 @media (prefers-color-scheme: dark) {
   .sshot figcaption { color: #ddd; }
+}
+
+@media (max-width: 820px){
+  .value-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px){
+  .landing-intro{
+    padding: 1.15rem;
+    border-radius: 20px;
+  }
+  .sshot-grid{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .trust-strip span{
+    width: 100%;
+    justify-content: center;
+  }
 }

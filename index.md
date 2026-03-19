@@ -9,7 +9,53 @@ app_icon: "/assets/img/app-icon.png"
 permalink: /
 ---
 
+<section class="landing-intro">
+  <p class="eyebrow">Built for Polar H10 users who want their data on iPhone and iPad</p>
+  <p class="lead">Record ECG, heart rate, RR intervals, and HRV from the Polar H10. View live charts in real time and export sessions as CSV, EDF, PDF, and legacy text files.</p>
+
+  <div class="value-grid">
+    <div class="value-card">
+      <h3>Capture complete sessions</h3>
+      <p>Record ECG, HR, RR, and HRV data from the Polar H10 with timestamps and elapsed time.</p>
+    </div>
+    <div class="value-card">
+      <h3>Watch it live</h3>
+      <p>Follow live ECG, HR, RR, and HRV charts directly on iPhone and iPad while recording.</p>
+    </div>
+    <div class="value-card">
+      <h3>Export in useful formats</h3>
+      <p>Open recordings in Numbers, Excel, EDFbrowser, or share a PDF of the live ECG view.</p>
+    </div>
+  </div>
+
+  <div class="trust-strip" aria-label="Key features">
+    <span>130 Hz ECG capture</span>
+    <span>CSV, EDF, PDF export</span>
+    <span>Apple Health for HR, RR, and HRV</span>
+    <span>iPhone and iPad live charts</span>
+  </div>
+</section>
+
 {% include screenshots.html %}
+
+## Why people use this app
+- Record ECG from the Polar H10 without needing a Mac or PC.
+- Export data in formats that work well for analysis, sharing, or archiving.
+- Review live trends for ECG, HR, RR, and HRV during a session.
+- Save screenshots to Photos and create a PDF of the ECG chart when needed.
+
+## How it works
+Connect the Polar H10 over Bluetooth, start a recording, and view the incoming data live on iPhone or iPad. The app records ECG, heart rate (HR), and R-R interval (RR) data and can calculate HRV from accepted RR intervals. **Minimum H10 firmware for ECG is 3.0.35.**
+
+If the user has an active subscription "Enable premium features" (IN-APP purchase), recordings are saved to the ECG Recorder App's directory in the "Files" app, with the file name based on the recording start time. ECG is exported as `.csv`, `.edf`, and a legacy ascii text file. HR and RR are exported as `.csv` plus legacy ascii text files. HRV is exported as `.csv`. The CSV files include local timestamps and elapsed seconds, so in most cases there is no need to create a separate time column manually. Premium features also include live charts of ECG, HR, RR, and HRV, plus PDF export of the live ECG view.
+
+## Export and analysis
+- `ECG`: sampled at about 130 Hz in microvolts (`uV`), exported as `.csv`, `.edf`, and legacy ascii text.
+- `HR`: about one value per second, exported as `.csv` and legacy ascii text.
+- `RR`: beat-to-beat timing in milliseconds, exported as `.csv` and legacy ascii text.
+- `HRV`: calculated from accepted RR intervals and exported as `.csv` with RMSSD and SDNN.
+
+The ECG CSV export contains timestamps and elapsed seconds. ECG recordings can also be opened as `.edf` files in [EDFbrowser](https://www.teuniz.net/edfbrowser). In addition, the live ECG chart can be exported as a PDF on an A4 ECG-style grid (25 mm/s, 10 mm/mV). Some [sample ECG data](/ecg-examples/examples.html) and [demo videos](/demo-video/videos.html) are available for import into Apple Numbers and EDFbrowser.
 
 ## App support and contact
 Please email **ecg-recorder [ a t ] cmdline [ d o t ] net** with all questions and comments. Or open an issue on [GitHub](https://github.com/poml88/ecg-recorder-ios).
@@ -21,11 +67,6 @@ Apple does not allow third-party apps to write ECG waveforms to Apple Health, ex
 Have a look at the demo videos and sample data for opening recordings in Apple Numbers or EDFbrowser.
 - [Demo how to open txt ascii ECG data file in numbers on iphone](https://youtu.be/N58LFXaAeIQ)
 - [Demo convert txt file with EDFbrowser](https://youtu.be/dLscFwdWxSE)
-
-## How does this app work?
-This app records ECG, heart rate (HR), and R-R interval (RR) data from a Polar H10 heart rate sensor. It can also calculate heart rate variability (HRV) from the recorded RR intervals and display live charts for ECG, HR, RR, and HRV. **Minimum firmware of the H10 for ECG to work is 3.0.35.** Screenshots of the live chart can be taken via the “save to photos” button. A video of the live chart can be recorded using the iOS screen recorder button from the iOS Control Center (you may need to enable it first in Settings -> Control Center).
-
-If the user has an active subscription "Enable premium features" (IN-APP purchase), recordings are saved to the ECG Recorder App's directory in the "Files" app, with the file name based on the recording start time. ECG is exported as `.csv`, `.edf`, and a legacy ascii text file. HR and RR are exported as `.csv` plus legacy ascii text files. HRV is exported as `.csv`. The CSV files now include local timestamps and elapsed seconds, so in most cases there is no need to create a separate time column manually. Premium features also include live / real-time charts of ECG, HR, RR, and HRV, plus PDF export of the live ECG view.
 
 ### ECG DATA
 According to specifications ECG data is collected at a rate of 130 Hz (my device works at 130.061 Hz) in microvolts (µV). That means that there is one value every 7.692 milliseconds (ms). For a 10 minute recording that is about 78000 values. When importing the data into e.g. Microsoft Excel or Apple Numbers, you can divide all ECG values by 1000 to receive millivolts (mV). The ECG CSV export already contains timestamp and elapsed_seconds columns.
@@ -55,4 +96,3 @@ The app is free to download to get a first impression and connect to a device. I
 This App uses the excellent Purchase and PolarBle SDKs.
 
 > **Note:** The German versions of the [Impressum]({{ site.de_impressum_path | relative_url }}) and the [Privacy Policy]({{ site.de_privacy_path | relative_url }}) are the legally binding versions.
-

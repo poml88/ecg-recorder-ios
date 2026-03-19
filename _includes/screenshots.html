@@ -1,6 +1,10 @@
-## {{ page.screenshots_string | default: site.screenshots_string }}
+<section class="screenshots-section" aria-labelledby="screenshots-heading">
+  <div class="screenshots-head">
+    <h2 id="screenshots-heading">{{ page.screenshots_string | default: site.screenshots_string }}</h2>
+    <p>Two key moments of the app: the main recording screen and the live ECG chart.</p>
+  </div>
 
-<div class="sshot-grid">
+  <div class="sshot-grid">
   <figure class="sshot">
     <a href="{{ '/assets/img/iphone-01@2x.png' | relative_url }}" target="_blank" rel="noopener">
       <img src="{{ '/assets/img/iphone-01.png' | relative_url }}" alt="ECG REcorder home screen" loading="lazy">
@@ -14,4 +18,5 @@
     </a>
     <figcaption>Live chart</figcaption>
   </figure>
-</div>
+  </div>
+</section>
