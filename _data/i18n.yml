@@ -12,6 +12,14 @@ languages:
     name: 🇫🇷 Français
     path: "/fr/"
     hreflang: "fr"
+  - code: it
+    name: 🇮🇹 Italiano
+    path: "/it/"
+    hreflang: "it"
+  - code: ru
+    name: 🇷🇺 Русский
+    path: "/ru/"
+    hreflang: "ru"
   - code: zh-Hans
     name: 🇨🇳 简体中文
     path: "/zh-Hans/"
