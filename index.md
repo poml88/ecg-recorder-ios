@@ -4,6 +4,7 @@ title_tagline: "Export ECG, HR, RR & HRV Data"
 subtitle: "Record and export ECG, HR, RR, and HRV data from the Polar H10 Bluetooth heart rate monitor and view live charts on iPhone and iPad."
 description: "Record ECG with Polar H10. Export ECG, heart rate (HR), RR interval, and HRV data as CSV, EDF, PDF, and legacy text files, and view live charts on iPhone and iPad."
 screenshots_string: "Screenshots"
+screenshots_intro: "Two key moments of the app: the main recording screen and the live ECG chart."
 lang: en
 app_icon: "/assets/img/app-icon.png"
 permalink: /

@@ -4,6 +4,7 @@ title_tagline: "Export des données ECG, HR, RR et HRV"
 subtitle: "Enregistrez et exportez les données ECG, HR, RR et HRV avec le capteur de fréquence cardiaque Bluetooth Polar H10 et affichez des graphiques en direct sur iPhone et iPad."
 description: "Enregistrez un ECG avec le Polar H10. Exportez les données ECG, fréquence cardiaque (HR), intervalles RR et HRV en fichiers CSV, EDF, PDF et texte legacy, et visualisez des graphiques en direct sur iPhone et iPad."
 screenshots_string: "Captures d’écran"
+screenshots_intro: "Deux vues clés de l’application : l’écran principal d’enregistrement et le graphique ECG en direct."
 lang: fr
 permalink: /fr/
 ---

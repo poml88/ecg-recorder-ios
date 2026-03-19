@@ -4,6 +4,7 @@ title_tagline: "导出 ECG、HR、RR 和 HRV 数据"
 subtitle: "通过 Polar H10 蓝牙心率传感器记录和导出 ECG、HR、RR 与 HRV 数据，并在 iPhone 和 iPad 上显示实时图表。"
 description: "使用 Polar H10 记录 ECG。将 ECG、心率 (HR)、RR 间期和 HRV 数据导出为 CSV、EDF、PDF 和旧版文本文件，并在 iPhone 和 iPad 上查看实时图表。"
 screenshots_string: "屏幕截图"
+screenshots_intro: "应用中的两个关键画面：主录制界面和实时 ECG 图表。"
 lang: zh-Hans
 permalink: /zh-Hans/
 ---
