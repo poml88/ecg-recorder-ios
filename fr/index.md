@@ -1,8 +1,8 @@
 ---
 title: "Application d’enregistrement ECG pour Polar H10 (iOS)"
-title_tagline: "Export des données ECG et RR"
-subtitle: "Enregistrez et exportez les données ECG, fréquence cardiaque (HR) et intervalles RR du cardiofréquencemètre Bluetooth Polar H10 avec affichage en direct sur iPhone et iPad."
-description: "Enregistrez un ECG avec le Polar H10. Exportez les données ECG, fréquence cardiaque (HR) et intervalles RR sous forme de fichiers texte et visualisez un graphique en direct sur iPhone et iPad."
+title_tagline: "Export des données ECG, HR, RR et HRV"
+subtitle: "Enregistrez et exportez les données ECG, HR, RR et HRV avec le capteur de fréquence cardiaque Bluetooth Polar H10 et affichez des graphiques en direct sur iPhone et iPad."
+description: "Enregistrez un ECG avec le Polar H10. Exportez les données ECG, fréquence cardiaque (HR), intervalles RR et HRV en fichiers CSV, EDF, PDF et texte legacy, et visualisez des graphiques en direct sur iPhone et iPad."
 screenshots_string: "Captures d’écran"
 lang: fr
 permalink: /fr/
@@ -15,35 +15,39 @@ permalink: /fr/
 Veuillez envoyer un courriel à **ecg-recorder [ a t ] cmdline [ d o t ] net** pour toute question ou remarque. Vous pouvez également ouvrir une issue sur [GitHub](https://github.com/poml88/ecg-recorder-ios).
 
 ## Remarque concernant la prise en charge d'Apple Health
-Actuellement, Apple n'autorise pas l'écriture de données ECG dans Apple Health (à l'exception des données ECG enregistrées avec l'Apple Watch). Je ne suis donc pas en mesure d'ajouter cette fonctionnalité. Les données HR et RR peuvent être écrites dans Apple Health, je pourrais donc ajouter cette fonctionnalité à l'avenir sur demande.
+Apple n'autorise pas les applications tierces à écrire les tracés ECG dans Apple Health, sauf pour les ECG enregistrés par l'Apple Watch. Cette application peut toutefois exporter trois autres types de données vers Apple Health lorsque l'option est activée dans les réglages : la fréquence cardiaque, la chronologie battement par battement et la HRV (SDNN).
 
 ## Vidéos de démonstration
 
-Regardez les vidéos de démonstration montrant comment convertir les données dans Numbers ou avec EDFbrowser.
+Regardez les vidéos de démonstration et les données d'exemple pour ouvrir les enregistrements dans Apple Numbers ou EDFbrowser.
 
 * [Démo : comment ouvrir un fichier de données ECG txt ascii dans Numbers sur iPhone](https://youtu.be/N58LFXaAeIQ)
 * [Démo : convertir un fichier txt avec EDFbrowser](https://youtu.be/dLscFwdWxSE)
 
 ## Comment fonctionne cette application ?
 
-Cette application enregistre trois types de données provenant d'un capteur de fréquence cardiaque Polar H10 : l'électrocardiogramme (ECG), la fréquence cardiaque (HR) et l'intervalle R-R (RR). **La version minimale du firmware du H10 pour que l'ECG fonctionne est 3.0.35.** Chaque type de donnée peut également être affiché sous forme de graphique en temps réel. Des captures d'écran du graphique en temps réel peuvent être prises via le bouton « save to photos ». Une vidéo du graphique en direct peut être enregistrée à l'aide du bouton d'enregistrement d'écran iOS depuis le Centre de contrôle iOS (peut nécessiter d'être activé via Réglages → Centre de contrôle).
+Cette application enregistre les données ECG, la fréquence cardiaque (HR) et les intervalles R-R (RR) provenant d'un capteur de fréquence cardiaque Polar H10. Elle peut aussi calculer la variabilité de la fréquence cardiaque (HRV) à partir des intervalles RR enregistrés et afficher des graphiques en direct pour l'ECG, la HR, le RR et la HRV. **La version minimale du firmware du H10 pour que l'ECG fonctionne est 3.0.35.** Des captures d'écran du graphique en direct peuvent être prises via le bouton « save to photos ». Une vidéo de la vue en direct peut être enregistrée avec le bouton d'enregistrement d'écran iOS depuis le Centre de contrôle (il peut être nécessaire de l'activer d'abord dans Réglages -> Centre de contrôle).
 
-Si l'utilisateur dispose d'un abonnement actif « Enable premium features » (achat intégré), toutes les données sont sauvegardées dans le répertoire de l'application ECG Recorder dans l'app « Fichiers », le nom de fichier étant l'horodatage du début de l'enregistrement. Toutes les données sont enregistrées sous forme de fichiers texte ASCII. Les fichiers texte contiennent une valeur par ligne et peuvent être facilement importés dans d'autres logiciels pour traitement des données. De plus, les fonctionnalités premium incluent des graphiques en direct / en temps réel pour l'ECG, la HR et le RR.
+Si l'utilisateur dispose d'un abonnement actif « Enable premium features » (achat intégré), les enregistrements sont sauvegardés dans le dossier de l'application ECG Recorder dans l'app « Fichiers », avec un nom basé sur l'heure de début de l'enregistrement. L'ECG est exporté en `.csv`, `.edf` et en fichier texte ASCII legacy. La HR et le RR sont exportés en `.csv` ainsi qu'en fichiers texte ASCII legacy. La HRV est exportée en `.csv`. Les fichiers CSV incluent maintenant des horodatages locaux et les secondes écoulées, de sorte qu'il n'est généralement plus nécessaire de créer manuellement une colonne de temps séparée. Les fonctionnalités premium incluent aussi des graphiques en direct / en temps réel pour l'ECG, la HR, le RR et la HRV, ainsi que l'export PDF de la vue ECG en direct.
 
 ### DONNÉES ECG
 
-Conformément aux spécifications, les données ECG sont collectées à une fréquence de 130 Hz (mon appareil fonctionne à 130.061 Hz) en microvolts (µV). Cela signifie qu'il y a une valeur toutes les 7,692 millisecondes (ms). Pour un enregistrement de 10 minutes, cela représente 78 000 valeurs. Lors de l'importation des données dans, par exemple, Microsoft Excel ou Apple Numbers, vous obtiendrez une longue colonne de valeurs en µV. Vous pouvez diviser toutes les valeurs par 1000 pour obtenir des millivolts (mV). Vous devrez aussi créer vous-même une colonne de temps pour pouvoir tracer correctement les données. Si la colonne de temps doit être en secondes, elle devrait contenir les valeurs 0.007692, 0.015385, 0.023077, 0.030769, …. Avec cette colonne de temps comme X et les mV comme Y, vous pouvez tracer un ECG mV vs. secondes.
+Conformément aux spécifications, les données ECG sont enregistrées à une fréquence de 130 Hz (mon appareil fonctionne à 130.061 Hz) en microvolts (µV). Cela signifie qu'il y a une valeur toutes les 7,692 millisecondes (ms). Un enregistrement de 10 minutes contient environ 78000 valeurs. Lors de l'importation des données dans, par exemple, Microsoft Excel ou Apple Numbers, vous pouvez diviser toutes les valeurs ECG par 1000 pour obtenir des millivolts (mV). L'export CSV ECG contient déjà les colonnes `timestamp` et `elapsed_seconds`.
 Le bouton « Set marker » dans le graphique ECG en direct ajoute une valeur de 2000 µV aux données. Cette valeur est facilement visible sur un graphe ou trouvable en recherchant dans les données.
 
-Le logiciel open source [EDFbrowser](https://www.teuniz.net/edfbrowser) peut convertir les fichiers texte ASCII en fichiers .edf, qui peuvent être parcourus aisément avec ce logiciel. Quelques [exemples de données ECG](/ecg-examples/examples.html) et des [vidéos de démonstration](/demo-video/videos.html) pour l'importation dans Apple Numbers et EDFBrowser sont disponibles.
+Les enregistrements ECG sont également exportés directement en fichiers `.edf`, qui peuvent être ouverts dans le logiciel open source [EDFbrowser](https://www.teuniz.net/edfbrowser). En outre, le graphique ECG en direct peut être exporté en PDF sur une grille ECG de format A4 (25 mm/s, 10 mm/mV), pratique pour l'affichage, le partage ou l'impression. Quelques [exemples de données ECG](/ecg-examples/examples.html) et des [vidéos de démonstration](/demo-video/videos.html) pour l'importation dans Apple Numbers et EDFbrowser sont disponibles.
 
 ### DONNÉES HR
 
-Il y a environ une valeur pour la HR (battements moyens par minute, bpm) enregistrée par seconde. Si vous souhaitez tracer ces données, il faudra créer une colonne de temps avec 1, 2, 3, 4, … secondes, et ainsi de suite.
+Il y a environ une valeur HR (battements moyens par minute, bpm) enregistrée par seconde. Les exports CSV HR incluent des horodatages locaux et les secondes écoulées.
 
 ### DONNÉES RR
 
-L'intervalle RR est le temps écoulé entre deux ondes R successives du signal QRS sur l'électrocardiogramme (la réciproque donne la fréquence cardiaque). Les intervalles RR sont enregistrés en ms.
+L'intervalle RR est le temps écoulé entre deux ondes R successives du signal QRS sur l'électrocardiogramme (la réciproque donne la fréquence cardiaque). Les intervalles RR sont enregistrés en ms. Les exports CSV RR incluent des horodatages locaux et les secondes écoulées.
+
+### DONNEES HRV
+
+La HRV est calculée à partir des intervalles RR acceptés et exportée sous forme de RMSSD et de SDNN en millisecondes. Pour réduire les artefacts évidents, les intervalles RR en dehors de 300-2000 ms sont ignorés, les intervalles qui diffèrent de plus de 200 ms de l'intervalle accepté précédent sont rejetés, et une fois qu'une courte ligne de base est disponible, les intervalles doivent rester dans une plage de 20 % autour de la médiane récente. Les exports CSV HRV incluent des horodatages locaux, les secondes écoulées, la longueur de fenêtre, le nombre de RR, le RMSSD et le SDNN.
 
 ## CONDITIONS D'UTILISATION
 
