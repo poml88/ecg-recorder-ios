@@ -16,6 +16,10 @@ languages:
     name: 🇮🇹 Italiano
     path: "/it/"
     hreflang: "it"
+  - code: nl
+    name: 🇳🇱 Nederlands
+    path: "/nl/"
+    hreflang: "nl"
   - code: ru
     name: 🇷🇺 Русский
     path: "/ru/"

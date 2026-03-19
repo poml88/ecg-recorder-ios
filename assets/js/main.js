@@ -2,7 +2,7 @@
 layout: null
 ---
 (function(){
-  const supported = ['en','de','fr','it','ru','zh-Hans'];
+  const supported = ['en','de','fr','it','nl','ru','zh-Hans'];
   const path = window.location.pathname.replace(/\/+$/,''); // trim trailing slash
   const siteBase = '{{ site.baseurl }}' || '';
   const currentLang = document.documentElement.getAttribute('lang') || 'en';
@@ -17,6 +17,7 @@ layout: null
       if(ll.startsWith('de')) return 'de';
       if(ll.startsWith('fr')) return 'fr';
       if(ll.startsWith('it')) return 'it';
+      if(ll.startsWith('nl')) return 'nl';
       if(ll.startsWith('ru')) return 'ru';
       if(ll.startsWith('zh')) return 'zh-Hans';
       if(ll.startsWith('en')) return 'en';
