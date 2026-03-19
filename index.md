@@ -24,7 +24,7 @@ permalink: /
     </div>
     <div class="value-card">
       <h3>Export in useful formats</h3>
-      <p>Open recordings in Numbers, Excel, EDFbrowser, or share a PDF of the live ECG view.</p>
+      <p>Open recordings in Numbers, Excel, EDFbrowser, or export a PDF snapshot of the last 30 seconds of the live ECG view.</p>
     </div>
   </div>
 
@@ -55,7 +55,7 @@ If the user has an active subscription "Enable premium features" (IN-APP purchas
 - `RR`: beat-to-beat timing in milliseconds, exported as `.csv` and legacy ascii text.
 - `HRV`: calculated from accepted RR intervals and exported as `.csv` with RMSSD and SDNN.
 
-The ECG CSV export contains timestamps and elapsed seconds. ECG recordings can also be opened as `.edf` files in [EDFbrowser](https://www.teuniz.net/edfbrowser). In addition, the live ECG chart can be exported as a PDF on an A4 ECG-style grid (25 mm/s, 10 mm/mV). Some [sample ECG data](/ecg-examples/examples.html) and [demo videos](/demo-video/videos.html) are available for import into Apple Numbers and EDFbrowser.
+The ECG CSV export contains timestamps and elapsed seconds. ECG recordings can also be opened as `.edf` files in [EDFbrowser](https://www.teuniz.net/edfbrowser). In addition, the live ECG chart can be exported as a PDF snapshot on an A4 ECG-style grid (25 mm/s, 10 mm/mV), showing the last 30 seconds of ECG rather than a long full-session export. Some [sample ECG data](/ecg-examples/examples.html) and [demo videos](/demo-video/videos.html) are available for import into Apple Numbers and EDFbrowser.
 
 ## App support and contact
 Please email **ecg-recorder [ a t ] cmdline [ d o t ] net** with all questions and comments. Or open an issue on [GitHub](https://github.com/poml88/ecg-recorder-ios).
@@ -72,7 +72,7 @@ Have a look at the demo videos and sample data for opening recordings in Apple N
 According to specifications ECG data is collected at a rate of 130 Hz (my device works at 130.061 Hz) in microvolts (µV). That means that there is one value every 7.692 milliseconds (ms). For a 10 minute recording that is about 78000 values. When importing the data into e.g. Microsoft Excel or Apple Numbers, you can divide all ECG values by 1000 to receive millivolts (mV). The ECG CSV export already contains timestamp and elapsed_seconds columns.
 The "Set marker" button in the ECG live chart adds a value of 2000 µV to the data. This value can be easily seen in a graph or found by searching through the data.
 
-ECG recordings are also exported directly as `.edf` files, which can be opened in the open source software [EDFbrowser](https://www.teuniz.net/edfbrowser). In addition, the live ECG chart can be exported as a PDF on an A4 ECG-style grid (25 mm/s, 10 mm/mV), which is convenient for viewing, sharing, or printing. Some [sample ECG data](/ecg-examples/examples.html) and [demo videos](/demo-video/videos.html) for import into Apple Numbers and EDFbrowser are available.
+ECG recordings are also exported directly as `.edf` files, which can be opened in the open source software [EDFbrowser](https://www.teuniz.net/edfbrowser). In addition, the live ECG chart can be exported as a PDF on an A4 ECG-style grid (25 mm/s, 10 mm/mV), which is convenient for viewing, sharing, or printing the last 30 seconds of ECG. Some [sample ECG data](/ecg-examples/examples.html) and [demo videos](/demo-video/videos.html) for import into Apple Numbers and EDFbrowser are available.
 
 ### HR DATA
 There is about one HR value (average beats per minute, bpm) recorded per second. HR CSV exports include local timestamps and elapsed seconds.

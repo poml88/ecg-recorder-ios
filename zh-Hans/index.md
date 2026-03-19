@@ -8,7 +8,56 @@ lang: zh-Hans
 permalink: /zh-Hans/
 ---
 
+<section class="landing-intro">
+  <p class="eyebrow">为希望在 iPhone 和 iPad 上使用 Polar H10 数据的用户而设计</p>
+  <p class="lead">使用 Polar H10 记录 ECG、心率、RR 间期和 HRV。通过实时图表查看数据，并将录制会话导出为 CSV、EDF、PDF 和旧版文本文件。</p>
+
+  <div class="value-grid">
+    <div class="value-card">
+      <h3>记录完整会话</h3>
+      <p>记录来自 Polar H10 的 ECG、HR、RR 和 HRV 数据，并附带时间戳与已过时间。</p>
+    </div>
+    <div class="value-card">
+      <h3>实时查看数据</h3>
+      <p>录制过程中可直接在 iPhone 和 iPad 上查看 ECG、HR、RR 和 HRV 实时图表。</p>
+    </div>
+    <div class="value-card">
+      <h3>导出为实用格式</h3>
+      <p>可在 Numbers、Excel 或 EDFbrowser 中打开录制结果，也可将实时 ECG 视图最近 30 秒导出为 PDF 快照。</p>
+    </div>
+  </div>
+
+  <div class="trust-strip" aria-label="关键功能">
+    <span>130 Hz ECG 采样</span>
+    <span>CSV、EDF、PDF 导出</span>
+    <span>支持将 HR、RR 和 HRV 导出到 Apple Health</span>
+    <span>iPhone 与 iPad 实时图表</span>
+  </div>
+</section>
+
 {% include screenshots.html %}
+
+## 为什么用户会使用这个应用
+
+* 无需 Mac 或 PC，即可直接从 Polar H10 记录 ECG。
+* 以适合分析、分享或归档的格式导出数据。
+* 在录制过程中实时查看 ECG、HR、RR 和 HRV 的变化趋势。
+* 将截图保存到“照片”，并将最近 30 秒 ECG 导出为 A4 PDF。
+
+## 应用如何工作
+
+通过蓝牙连接 Polar H10，开始录制后，即可在 iPhone 或 iPad 上实时查看接收到的数据。本应用可记录 ECG、心率（HR）和 R-R 间期（RR）数据，并能根据被接受的 RR 间期计算 HRV。**ECG 功能要求 H10 固件版本至少为 3.0.35。**
+
+如果用户拥有有效的“Enable premium features”订阅（应用内购买），录制文件会保存到“文件”应用中 ECG Recorder 的文件夹内，文件名基于录制开始时间。ECG 可导出为 `.csv`、`.edf` 和旧版 ASCII 文本文件；HR 和 RR 可导出为 `.csv` 以及旧版 ASCII 文本文件；HRV 可导出为 `.csv`。CSV 文件包含本地时间戳和已过秒数，因此大多数情况下不再需要手动创建单独的时间列。高级功能还包括 ECG、HR、RR 和 HRV 的实时图表，以及实时 ECG 视图的 PDF 导出。
+
+## 导出与分析
+
+* `ECG`：以约 130 Hz 采样，单位为微伏（`uV`），可导出为 `.csv`、`.edf` 和旧版 ASCII 文本。
+* `HR`：大约每秒一个数值，可导出为 `.csv` 和旧版 ASCII 文本。
+* `RR`：逐搏间期，单位为毫秒，可导出为 `.csv` 和旧版 ASCII 文本。
+* `HRV`：基于被接受的 RR 间期计算，可导出为包含 RMSSD 和 SDNN 的 `.csv`。
+
+ECG 的 CSV 导出包含时间戳和已过秒数。ECG 录制结果还可以作为 `.edf` 文件在 [EDFbrowser](https://www.teuniz.net/edfbrowser) 中打开。此外，实时 ECG 图表还可以导出为带有 A4 ECG 网格的 PDF 快照（25 mm/s，10 mm/mV），显示最近 30 秒 ECG，而不是长时间整段会话的 PDF 导出。一些可用于导入 Apple Numbers 和 EDFbrowser 的 [示例 ECG 数据](/ecg-examples/examples.html) 与 [演示视频](/demo-video/videos.html) 也可供参考。
 
 ## 应用支持与联系方式
 
@@ -24,18 +73,12 @@ permalink: /zh-Hans/
 * [在 iPhone 的 Numbers 中打开 txt ascii ECG 数据文件的演示](https://youtu.be/N58LFXaAeIQ)
 * [使用 EDFbrowser 转换 txt 文件的演示](https://youtu.be/dLscFwdWxSE)
 
-## 这个应用如何工作？
-
-本应用可从 Polar H10 心率传感器记录 ECG、心率（HR）和 R-R 间期（RR）数据，还可以根据记录到的 RR 间期计算心率变异性（HRV），并显示 ECG、HR、RR 和 HRV 的实时图表。ECG 功能要求 H10 固件版本至少为 3.0.35。可以通过“save to photos”按钮保存实时图表截图，也可以使用 iOS 控制中心中的屏幕录制按钮录制实时视图视频（可能需要先在“设置 -> 控制中心”中启用）。
-
-如果用户拥有有效的“Enable premium features”订阅（应用内购买），录制文件会保存到“文件”应用中 ECG Recorder 的文件夹内，文件名基于录制开始时间。ECG 可导出为 `.csv`、`.edf` 和旧版 ASCII 文本文件；HR 和 RR 可导出为 `.csv` 以及旧版 ASCII 文本文件；HRV 可导出为 `.csv`。CSV 文件现在包含本地时间戳和已过秒数，因此大多数情况下不再需要手动创建单独的时间列。高级功能还包括 ECG、HR、RR 和 HRV 的实时图表，以及实时 ECG 视图的 PDF 导出。
-
 ### ECG 数据
 
 根据规格，ECG 数据以 130 Hz 的采样率采集（我的设备实测为 130.061 Hz），单位为微伏（µV）。这意味着每 7.692 毫秒（ms）记录一个数值。10 分钟录制大约会产生 78000 个采样点。将数据导入 Microsoft Excel 或 Apple Numbers 等软件后，您可以将所有 ECG 数值除以 1000 转换为毫伏（mV）。ECG 的 CSV 导出已经包含 `timestamp` 和 `elapsed_seconds` 列。
 ECG 实时图表中的 “设置标记（Set marker）” 按钮会向数据中加入一个 2000 µV 的值。该值在图表中很容易看到，也可以通过在数据中搜索找到。
 
-ECG 录制结果还会直接导出为 `.edf` 文件，可在开源软件 [EDFbrowser](https://www.teuniz.net/edfbrowser) 中打开。此外，实时 ECG 图表还可以导出为带有 ECG 样式 A4 网格的 PDF（25 mm/s，10 mm/mV），方便查看、分享或打印。一些可用于导入 Apple Numbers 和 EDFbrowser 的 [示例 ECG 数据](/ecg-examples/examples.html) 与 [演示视频](/demo-video/videos.html) 也可供参考。
+ECG 录制结果还会直接导出为 `.edf` 文件，可在开源软件 [EDFbrowser](https://www.teuniz.net/edfbrowser) 中打开。此外，实时 ECG 图表还可以导出为带有 ECG 样式 A4 网格的 PDF（25 mm/s，10 mm/mV），方便查看、分享或打印最近 30 秒的 ECG。一些可用于导入 Apple Numbers 和 EDFbrowser 的 [示例 ECG 数据](/ecg-examples/examples.html) 与 [演示视频](/demo-video/videos.html) 也可供参考。
 
 ### HR 数据
 

@@ -8,7 +8,56 @@ lang: fr
 permalink: /fr/
 ---
 
+<section class="landing-intro">
+  <p class="eyebrow">Concue pour les utilisateurs du Polar H10 qui veulent exploiter leurs données sur iPhone et iPad</p>
+  <p class="lead">Enregistrez l’ECG, la fréquence cardiaque, les intervalles RR et la HRV avec le Polar H10. Suivez les données sur des graphiques en direct et exportez vos sessions en CSV, EDF, PDF et fichiers texte legacy.</p>
+
+  <div class="value-grid">
+    <div class="value-card">
+      <h3>Enregistrer des sessions complètes</h3>
+      <p>Capturez les données ECG, HR, RR et HRV du Polar H10 avec horodatages et temps écoulé.</p>
+    </div>
+    <div class="value-card">
+      <h3>Suivre les données en direct</h3>
+      <p>Affichez les graphiques ECG, HR, RR et HRV directement sur iPhone et iPad pendant l’enregistrement.</p>
+    </div>
+    <div class="value-card">
+      <h3>Exporter dans des formats utiles</h3>
+      <p>Ouvrez les enregistrements dans Numbers, Excel ou EDFbrowser, ou exportez un instantané PDF des 30 dernières secondes de la vue ECG en direct.</p>
+    </div>
+  </div>
+
+  <div class="trust-strip" aria-label="Fonctionnalités clés">
+    <span>ECG à 130 Hz</span>
+    <span>Export CSV, EDF et PDF</span>
+    <span>Apple Health pour HR, RR et HRV</span>
+    <span>Graphiques en direct sur iPhone et iPad</span>
+  </div>
+</section>
+
 {% include screenshots.html %}
+
+## Pourquoi utiliser cette application
+
+* Enregistrer un ECG depuis le Polar H10 sans avoir besoin d’un Mac ou d’un PC.
+* Exporter les données dans des formats adaptés à l’analyse, au partage ou à l’archivage.
+* Suivre les tendances ECG, HR, RR et HRV en direct pendant une session.
+* Enregistrer des captures d’écran dans Photos et exporter les 30 dernières secondes de l’ECG sous forme de PDF A4.
+
+## Comment l’application fonctionne
+
+Connectez le Polar H10 en Bluetooth, démarrez un enregistrement et visualisez les données entrantes en direct sur iPhone ou iPad. L’application enregistre les données ECG, la fréquence cardiaque (HR) et les intervalles R-R (RR), et peut calculer la HRV à partir des intervalles RR acceptés. **La version minimale du firmware du H10 pour que l’ECG fonctionne est 3.0.35.**
+
+Si l'utilisateur dispose d'un abonnement actif « Enable premium features » (achat intégré), les enregistrements sont sauvegardés dans le dossier de l'application ECG Recorder dans l'app « Fichiers », avec un nom basé sur l'heure de début de l'enregistrement. L'ECG est exporté en `.csv`, `.edf` et en fichier texte ASCII legacy. La HR et le RR sont exportés en `.csv` ainsi qu'en fichiers texte ASCII legacy. La HRV est exportée en `.csv`. Les fichiers CSV incluent des horodatages locaux et les secondes écoulées, de sorte qu'il n'est généralement plus nécessaire de créer manuellement une colonne de temps séparée. Les fonctionnalités premium incluent aussi des graphiques en direct pour l'ECG, la HR, le RR et la HRV, ainsi que l'export PDF de la vue ECG en direct.
+
+## Export et analyse
+
+* `ECG` : échantillonné à environ 130 Hz en microvolts (`uV`), exporté en `.csv`, `.edf` et texte ASCII legacy.
+* `HR` : environ une valeur par seconde, exportée en `.csv` et texte ASCII legacy.
+* `RR` : intervalle battement par battement en millisecondes, exporté en `.csv` et texte ASCII legacy.
+* `HRV` : calculée à partir des intervalles RR acceptés et exportée en `.csv` avec RMSSD et SDNN.
+
+L’export CSV ECG contient des horodatages et les secondes écoulées. Les enregistrements ECG peuvent aussi être ouverts comme fichiers `.edf` dans [EDFbrowser](https://www.teuniz.net/edfbrowser). En outre, le graphique ECG en direct peut être exporté comme instantané PDF sur une grille ECG A4 (25 mm/s, 10 mm/mV), montrant les 30 dernières secondes d’ECG plutôt qu’un long export de session complète. Des [exemples de données ECG](/ecg-examples/examples.html) et des [vidéos de démonstration](/demo-video/videos.html) sont disponibles pour l’importation dans Apple Numbers et EDFbrowser.
 
 ## Support et contact de l'application
 
@@ -24,18 +73,12 @@ Regardez les vidéos de démonstration et les données d'exemple pour ouvrir les
 * [Démo : comment ouvrir un fichier de données ECG txt ascii dans Numbers sur iPhone](https://youtu.be/N58LFXaAeIQ)
 * [Démo : convertir un fichier txt avec EDFbrowser](https://youtu.be/dLscFwdWxSE)
 
-## Comment fonctionne cette application ?
-
-Cette application enregistre les données ECG, la fréquence cardiaque (HR) et les intervalles R-R (RR) provenant d'un capteur de fréquence cardiaque Polar H10. Elle peut aussi calculer la variabilité de la fréquence cardiaque (HRV) à partir des intervalles RR enregistrés et afficher des graphiques en direct pour l'ECG, la HR, le RR et la HRV. **La version minimale du firmware du H10 pour que l'ECG fonctionne est 3.0.35.** Des captures d'écran du graphique en direct peuvent être prises via le bouton « save to photos ». Une vidéo de la vue en direct peut être enregistrée avec le bouton d'enregistrement d'écran iOS depuis le Centre de contrôle (il peut être nécessaire de l'activer d'abord dans Réglages -> Centre de contrôle).
-
-Si l'utilisateur dispose d'un abonnement actif « Enable premium features » (achat intégré), les enregistrements sont sauvegardés dans le dossier de l'application ECG Recorder dans l'app « Fichiers », avec un nom basé sur l'heure de début de l'enregistrement. L'ECG est exporté en `.csv`, `.edf` et en fichier texte ASCII legacy. La HR et le RR sont exportés en `.csv` ainsi qu'en fichiers texte ASCII legacy. La HRV est exportée en `.csv`. Les fichiers CSV incluent maintenant des horodatages locaux et les secondes écoulées, de sorte qu'il n'est généralement plus nécessaire de créer manuellement une colonne de temps séparée. Les fonctionnalités premium incluent aussi des graphiques en direct / en temps réel pour l'ECG, la HR, le RR et la HRV, ainsi que l'export PDF de la vue ECG en direct.
-
 ### DONNÉES ECG
 
 Conformément aux spécifications, les données ECG sont enregistrées à une fréquence de 130 Hz (mon appareil fonctionne à 130.061 Hz) en microvolts (µV). Cela signifie qu'il y a une valeur toutes les 7,692 millisecondes (ms). Un enregistrement de 10 minutes contient environ 78000 valeurs. Lors de l'importation des données dans, par exemple, Microsoft Excel ou Apple Numbers, vous pouvez diviser toutes les valeurs ECG par 1000 pour obtenir des millivolts (mV). L'export CSV ECG contient déjà les colonnes `timestamp` et `elapsed_seconds`.
 Le bouton « Set marker » dans le graphique ECG en direct ajoute une valeur de 2000 µV aux données. Cette valeur est facilement visible sur un graphe ou trouvable en recherchant dans les données.
 
-Les enregistrements ECG sont également exportés directement en fichiers `.edf`, qui peuvent être ouverts dans le logiciel open source [EDFbrowser](https://www.teuniz.net/edfbrowser). En outre, le graphique ECG en direct peut être exporté en PDF sur une grille ECG de format A4 (25 mm/s, 10 mm/mV), pratique pour l'affichage, le partage ou l'impression. Quelques [exemples de données ECG](/ecg-examples/examples.html) et des [vidéos de démonstration](/demo-video/videos.html) pour l'importation dans Apple Numbers et EDFbrowser sont disponibles.
+Les enregistrements ECG sont également exportés directement en fichiers `.edf`, qui peuvent être ouverts dans le logiciel open source [EDFbrowser](https://www.teuniz.net/edfbrowser). En outre, le graphique ECG en direct peut être exporté en PDF sur une grille ECG de format A4 (25 mm/s, 10 mm/mV), pratique pour l'affichage, le partage ou l'impression des 30 dernières secondes d’ECG. Quelques [exemples de données ECG](/ecg-examples/examples.html) et des [vidéos de démonstration](/demo-video/videos.html) pour l'importation dans Apple Numbers et EDFbrowser sont disponibles.
 
 ### DONNÉES HR
 
